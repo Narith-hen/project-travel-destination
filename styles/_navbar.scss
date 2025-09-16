@@ -1,0 +1,57 @@
+@import "color";
+@import "style3in1";
+@import "media-queries";
+
+header {
+  background: linear-gradient(rgba(4, 20, 250, 0.5), rgba(6, 23, 249, 0.5)),
+    url("../images/welcome-home.png");
+  background-size: cover;
+  background-position: top center;
+  height: 70vh;
+  @extend .padding-ri-le;
+  .navbar {
+    @extend .flex-sp-bet;
+    .material-symbols-outlined{
+        opacity: 0;
+        @include table {
+            color: $white;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+    img {
+      width: 150px;
+      @extend .flex;
+      @include table {
+        width: 100px;
+        position: absolute;
+        top: 14px;
+        left: 20px;
+      }
+    }
+    ul {
+      @extend .flex;
+      list-style: none;
+      gap: 10px;
+      @include table{
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      a:hover {
+        color: $secondary;
+      }
+      #sign {
+        @extend .btn;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}

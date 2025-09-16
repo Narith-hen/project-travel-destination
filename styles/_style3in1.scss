@@ -1,0 +1,24 @@
+@import "color";
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-sp-bet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padding-ri-le{
+    padding: 0px 100px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background:$secondary ;
+    border-radius: 8px;
+    
+}
