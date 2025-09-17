@@ -7,7 +7,7 @@ header {
     url("../images/welcome-home.png");
   background-size: cover;
   background-position: top center;
-  height: 70vh;
+  height: 80vh;
   @extend .padding-ri-le;
   .navbar {
     @extend .flex-sp-bet;
@@ -36,6 +36,9 @@ header {
       @extend .flex;
       list-style: none;
       gap: 10px;
+      @include laptop{
+        font-size: 0.8rem;
+      }
       @include table{
         display: none;
       }
@@ -44,7 +47,7 @@ header {
         color: $white;
       }
       a:hover {
-        color: $secondary;
+        color: $primary;
       }
       #sign {
         @extend .btn;
@@ -54,4 +57,51 @@ header {
       }
     }
   }
+  h1{
+    margin-top: 200px;
+    font-size: 40px;
+    color: $white;
+    span{
+      color: $primary;
+    }
+    @include table{
+      font-size: 32px;
+    }
+  }
+  p{
+    color: $white;
+    font-weight: 300;
+    span{
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+  .socil{
+    margin-top: 10px;
+    a{
+      .bx{
+        color:$white;
+        font-size: 24px;
+      }
+      .bx:hover{
+      color:$hover-color;
+    }
+    }
+  }
+  button{
+    @extend .btn2;
+    margin: 10px 0px;
+    border: solid 2px $primary;
+    color: $primary;
+    background: none;
+
+  }
+  button:hover{
+    background: $primary;
+    color: $white;
+  }
+  @include table{
+      padding: 0px 20px;
+      height: 60vh;
+    }
 }
