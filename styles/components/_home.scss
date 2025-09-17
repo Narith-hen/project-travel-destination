@@ -1,0 +1,254 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+main {
+  @extend .padding-ri-le;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include table {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content {
+    .promotion {
+      @extend .flex;
+      @include table {
+        h1 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .card-pro {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 50px;
+      margin-top: 30px;
+      @include table{
+        gap: 20px;
+      }
+      .cards {
+        @extend .animation;
+        box-sizing: border-box;
+        img {
+          width: 420px;
+          @include table {
+            width: 228px;
+          }
+          @include mobile {
+            width: 350px;
+          }
+        }
+
+        h1 {
+          color: $main-color;
+          font-size: 1.4rem;
+
+          @include table {
+            font-size: 10px;
+          }
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+        p {
+          flex-wrap: wrap;
+          color: $sub-color;
+          font-size: 0.8rem;
+          @include table {
+            width: 180px;
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+
+    .popular-restaurant {
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      @include table {
+        // opacity: 1;
+        // position: absolute;
+        // left: 20px;
+      }
+
+      .text {
+        h1 {
+          font-size: 24px;
+          color: $main-color;
+          @include table {
+            font-size: 20px;
+          }
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+      }
+      .but {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include table {
+          margin: 10px 0px;
+        }
+        @include mobile {
+        }
+        #siem {
+          @extend .btn;
+          background: $main-color;
+          color: $white;
+          @include table {
+            padding: 8px 15px;
+            font-size: 10px;
+            border-radius: 6px;
+          }
+          @include mobile {
+            padding: 6px 12px;
+            font-size: 8px;
+          }
+        }
+        #siem:hover {
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        #phnom {
+          @extend .btn;
+          background: $white;
+          font-weight: 300;
+          border: solid 2px $main-color;
+          @include table {
+            padding: 8px 15px;
+            font-size: 10px;
+            border-radius: 6px;
+          }
+          @include mobile {
+            padding: 6px 12px;
+            font-size: 8px;
+          }
+        }
+        #phnom:hover {
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+      }
+      .cards-rest-all {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        @include mobile {
+              gap: 10px;
+            }
+        .cards-rest {
+          @extend .animation;
+          background-color: $white;
+          border-radius: 16px;
+
+          @include table {
+            width: 150px;
+          }
+          @include mobile {
+              width: 170px;
+            }
+          img {
+            width: 310px;
+            @include table {
+              width: 150px;
+            }
+            @include mobile {
+              width: 170px;
+            }
+          }
+          p {
+            color: $black-color;
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 10px;
+            padding-left: 20px;
+            @include table {
+              font-size: 10px;
+              font-weight: 500;
+              padding-top: 2px;
+              padding-left: 8px;
+            }
+          }
+          .stars {
+            display: flex;
+            align-items: center;
+            // padding: 6px 0px;
+            p {
+              font-size: 12px;
+              color: rgb(82, 82, 82);
+              font-weight: 400;
+              @include table {
+                font-size: 8px;
+              }
+            }
+            .star {
+              // background: rebeccapurple;
+              i {
+                color: $primary;
+                font-size: 15px;
+                @include table {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          #address {
+            flex-wrap: wrap;
+            width: 280px;
+            font-size: 14px;
+            font-weight: 300;
+            color: $sub-color;
+            padding-bottom: 30px;
+            @include table {
+              width: 150px;
+              font-size: 8px;
+              padding-bottom: 10px;
+            }
+          }
+          .US {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 5px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            p {
+              font-size: 14px;
+              color: gray;
+              top: 40px;
+              padding-top: 5px;
+              @include table {
+                font-size: 6px;
+              }
+            }
+            h2 {
+              color: $main-color;
+              @include table {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        .cards-rest:hover {
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+      }
+    }
+  }
+}

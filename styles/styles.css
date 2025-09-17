@@ -1,4 +1,4 @@
-.flex, header .navbar ul, header .navbar img {
+.flex, main .content .promotion, header .navbar ul, header .navbar img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,20 +10,32 @@
   align-items: center;
 }
 
-.padding-ri-le, header {
+.padding-ri-le, main, header {
   padding: 0px 100px;
 }
 
-.btn, header .navbar ul #sign {
+.btn, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
   padding: 10px 20px;
   background: #0050FF;
   border-radius: 8px;
+}
+
+.btn-table {
+  padding: 5px 10px;
+  background: #0050FF;
+  border-radius: 4px;
 }
 
 .btn2, header button {
   padding: 10px 20px;
   background: #FF8C00;
   border-radius: 8px;
+}
+
+.animation, main .content .popular-restaurant .cards-rest-all .cards-rest, main .content .card-pro .cards {
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 header {
@@ -80,6 +92,9 @@ header .navbar ul a:hover {
 header .navbar ul #sign a {
   color: #FFFFFF;
 }
+header .navbar ul #home {
+  color: #FF8C00;
+}
 header h1 {
   margin-top: 200px;
   font-size: 40px;
@@ -128,9 +143,286 @@ header button:hover {
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .content .promotion h1 {
+    font-size: 1.3rem;
+  }
+}
+main .content .card-pro {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  main .content .card-pro {
+    gap: 20px;
+  }
+}
+main .content .card-pro .cards {
+  box-sizing: border-box;
+}
+main .content .card-pro .cards img {
+  width: 420px;
+}
+@media screen and (max-width: 768px) {
+  main .content .card-pro .cards img {
+    width: 228px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .content .card-pro .cards img {
+    width: 350px;
+  }
+}
+main .content .card-pro .cards h1 {
+  color: #001E60;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  main .content .card-pro .cards h1 {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .content .card-pro .cards h1 {
+    font-size: 16px;
+  }
+}
+main .content .card-pro .cards p {
+  flex-wrap: wrap;
+  color: #7F8CAB;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  main .content .card-pro .cards p {
+    width: 180px;
+    font-size: 0.6rem;
+  }
+}
+main .content .popular-restaurant {
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+main .content .popular-restaurant .text h1 {
+  font-size: 24px;
+  color: #001E60;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .text h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .content .popular-restaurant .text h1 {
+    font-size: 16px;
+  }
+}
+main .content .popular-restaurant .but {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .but {
+    margin: 10px 0px;
+  }
+}
+main .content .popular-restaurant .but #siem {
+  background: #001E60;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .but #siem {
+    padding: 8px 15px;
+    font-size: 10px;
+    border-radius: 6px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .content .popular-restaurant .but #siem {
+    padding: 6px 12px;
+    font-size: 8px;
+  }
+}
+main .content .popular-restaurant .but #siem:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+main .content .popular-restaurant .but #phnom {
+  background: #FFFFFF;
+  font-weight: 300;
+  border: solid 2px #001E60;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .but #phnom {
+    padding: 8px 15px;
+    font-size: 10px;
+    border-radius: 6px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .content .popular-restaurant .but #phnom {
+    padding: 6px 12px;
+    font-size: 8px;
+  }
+}
+main .content .popular-restaurant .but #phnom:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+main .content .popular-restaurant .cards-rest-all {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 425px) {
+  main .content .popular-restaurant .cards-rest-all {
+    gap: 10px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest {
+    width: 170px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest img {
+  width: 310px;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest img {
+    width: 170px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest p {
+  color: #1b1b1b;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest p {
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 2px;
+    padding-left: 8px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest .stars {
+  display: flex;
+  align-items: center;
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest .stars p {
+  font-size: 12px;
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest .stars p {
+    font-size: 8px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest .stars .star i {
+  color: #FF8C00;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest .stars .star i {
+    font-size: 10px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest #address {
+  flex-wrap: wrap;
+  width: 280px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #7F8CAB;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest #address {
+    width: 150px;
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest .US {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest .US p {
+  font-size: 14px;
+  color: gray;
+  top: 40px;
+  padding-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest .US p {
+    font-size: 6px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest .US h2 {
+  color: #001E60;
+}
+@media screen and (max-width: 768px) {
+  main .content .popular-restaurant .cards-rest-all .cards-rest .US h2 {
+    font-size: 10px;
+  }
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #F2F6FF;
 }/*# sourceMappingURL=styles.css.map */
