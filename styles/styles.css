@@ -1,4 +1,4 @@
-.flex, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
+.flex, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
   border-radius: 8px;
 }
 
-.animation, main .content .popular-restaurant .cards-rest-all .cards-rest, main .content .card-pro .cards {
+.animation, main .total-price .price .price-1, main .total-price .total-text, main .content .popular-restaurant .cards-rest-all .cards-rest, main .content .card-pro .cards {
   animation: appear 5s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -195,12 +195,17 @@ main .content .card-pro {
 main .content .card-pro .cards {
   box-sizing: border-box;
 }
+@media screen and (max-width: 425px) {
+  main .content .card-pro .cards {
+    animation: none;
+  }
+}
 main .content .card-pro .cards img {
   width: 420px;
 }
 @media screen and (max-width: 768px) {
   main .content .card-pro .cards img {
-    width: 228px;
+    width: 220px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -325,6 +330,7 @@ main .content .popular-restaurant .cards-rest-all .cards-rest {
 @media screen and (max-width: 425px) {
   main .content .popular-restaurant .cards-rest-all .cards-rest {
     width: 170px;
+    animation: none;
   }
 }
 main .content .popular-restaurant .cards-rest-all .cards-rest img {
@@ -427,13 +433,54 @@ main .partners .text {
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 768px) {
+  main .partners .text {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .partners .text {
+    margin-bottom: 20px;
+  }
+}
+main .partners .text h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  main .partners .text h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .partners .text h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
 main .partners .all-partner {
   margin-bottom: 60px;
   gap: 24px;
   animation: scroll 10s linear infinite;
 }
+@media screen and (max-width: 768px) {
+  main .partners .all-partner {
+    margin-bottom: 30px;
+  }
+}
 main .partners .all-partner img {
   width: 150px;
+}
+@media screen and (max-width: 768px) {
+  main .partners .all-partner img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .partners .all-partner img {
+    width: 80px;
+  }
 }
 main .total-price {
   margin-bottom: 50px;
@@ -442,19 +489,259 @@ main .total-price .total-text {
   text-align: center;
   padding: 0px 0px 50px 0px;
 }
+@media screen and (max-width: 425px) {
+  main .total-price .total-text {
+    padding: 0px 0px 20px 0px;
+    animation: none;
+  }
+}
+main .total-price .total-text h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  main .total-price .total-text h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .total-price .total-text h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
 main .total-price .price {
+  flex-wrap: wrap;
   gap: 200px;
+}
+@media screen and (max-width: 768px) {
+  main .total-price .price {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .total-price .price {
+    display: block;
+  }
 }
 main .total-price .price .price-1 {
   text-align: center;
+  color: #001E60;
+}
+@media screen and (max-width: 425px) {
+  main .total-price .price .price-1 {
+    margin-bottom: 40px;
+    animation: none;
+  }
 }
 main .total-price .price .price-1 span {
   font-size: 60px;
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  main .total-price .price .price-1 span {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .total-price .price .price-1 span {
+    font-size: 56px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .total-price .price .price-1 h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .total-price .price .price-1 h1 {
+    font-size: 28px;
+  }
+}
 main .total-price .price .price-1 .p-total {
   font-size: 14px;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  main .total-price .price .price-1 .p-total {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .total-price .price .price-1 .p-total {
+    font-size: 16px;
+    color: #7F8CAB;
+  }
+}
+
+footer {
+  background-color: rgb(215, 215, 215);
+}
+footer .footer-main .footer-all {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 180px;
+  padding: 20px 0px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer-main .footer-all {
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all {
+    display: block;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .footer-contact {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+footer .footer-main .footer-all .footer-contact h2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .footer-contact h2 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+}
+footer .footer-main .footer-all .footer-contact ul {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+footer .footer-main .footer-all .footer-contact ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #7F8CAB;
+}
+footer .footer-main .footer-all .footer-contact .icon a i {
+  font-size: 18px;
+  color: #001E60;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .footer-about {
+    margin-bottom: 20px;
+  }
+}
+footer .footer-main .footer-all .footer-about h2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .footer-about h2 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+}
+footer .footer-main .footer-all .footer-about ul {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+footer .footer-main .footer-all .footer-about ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #7F8CAB;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .footer-contents {
+    margin-bottom: 20px;
+  }
+}
+footer .footer-main .footer-all .footer-contents h2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .footer-contents h2 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+}
+footer .footer-main .footer-all .footer-contents ul {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+footer .footer-main .footer-all .footer-contents ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #7F8CAB;
+}
+footer .footer-main .footer-all .peyments-partner .peyments-cards p {
+  font-size: 12px;
+  padding-bottom: 6px;
+  color: #7F8CAB;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .peyments-partner .peyments-cards p {
+    color: rgb(63, 63, 63);
+  }
+}
+footer .footer-main .footer-all .peyments-partner .peyments-cards .cards {
+  width: 180px;
+}
+footer .footer-main .footer-all .peyments-partner .peyments-cards .cards img {
+  width: 30px;
+}
+footer .footer-main .footer-all .peyments-partner .footer-partner p {
+  font-size: 12px;
+  padding: 6px 0px;
+  color: #7F8CAB;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .footer-all .peyments-partner .footer-partner p {
+    color: rgb(63, 63, 63);
+  }
+}
+footer .footer-main .footer-all .peyments-partner .footer-partner .partners-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-main .footer-all .peyments-partner .footer-partner .partners-logo img {
+  width: 50px;
+}
+footer .footer-main .logo-footer {
+  gap: 40px;
+  margin: 25px 0px;
+  padding: 20px 0px;
+  border-top: solid 1px rgb(196, 196, 196);
+  border-bottom: solid 1px rgb(196, 196, 196);
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .logo-footer {
+    gap: 20px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+  }
+}
+footer .footer-main .logo-footer img {
+  width: 120px;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .logo-footer img {
+    width: 60px;
+  }
+}
+footer .footer-main .travel-destination {
+  text-align: center;
+  padding-bottom: 25px;
+}
+footer .footer-main .travel-destination p {
+  font-size: 12px;
+  color: rgb(93, 93, 93);
+}
+@media screen and (max-width: 425px) {
+  footer .footer-main .travel-destination p {
+    font-size: 8px;
+  }
 }
 
 * {
