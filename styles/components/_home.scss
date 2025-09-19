@@ -10,6 +10,16 @@
   }
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 main {
   @extend .padding-ri-le;
   padding-top: 50px;
@@ -247,6 +257,52 @@ main {
         }
         .cards-rest:hover {
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+      }
+    }
+  }
+
+
+
+  // Our partner
+  .partners{
+    .text{
+      text-align: center;
+      margin-bottom: 60px
+    }
+    .all-partner{
+      @extend .flex;
+      margin-bottom: 60px;
+      gap: 24px;
+      animation: scroll 10s linear infinite;
+      img{
+        width: 150px;
+      }
+    }
+  }
+
+
+  // total+price
+  .total-price{
+    margin-bottom: 50px;
+    .total-text{
+      text-align: center;
+      padding: 0px 0px 50px 0px;
+    }
+    .price{
+      @extend .flex;
+      gap: 200px;
+      .price-1{
+        text-align: center;
+
+        span{
+          font-size: 60px;
+          font-weight: 600;
+          
+        }
+        .p-total{
+          font-size: 14px;
+          font-weight: 400;
         }
       }
     }
