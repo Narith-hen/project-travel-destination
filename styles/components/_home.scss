@@ -296,10 +296,13 @@ main {
     .all-partner{
       @extend .flex;
       margin-bottom: 60px;
-      gap: 24px;
+      gap: 40px;
       animation: scroll 10s linear infinite;
       @include table{
         margin-bottom: 30px;
+      }
+      @include mobile{
+        gap: 20px;
       }
       img{
         width: 150px;

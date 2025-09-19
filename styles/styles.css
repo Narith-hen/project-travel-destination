@@ -1,20 +1,20 @@
-.flex, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
+.flex, #aboutpage .navbar-about ul, #aboutpage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-sp-bet, header .navbar {
+.flex-sp-bet, #aboutpage .navbar-about, header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.padding-ri-le, main, header {
+.padding-ri-le, #aboutpage, main, header {
   padding: 0px 100px;
 }
 
-.btn, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
+.btn, #aboutpage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
   padding: 10px 20px;
   background: #0050FF;
   border-radius: 8px;
@@ -461,12 +461,17 @@ main .partners .text h1 {
 }
 main .partners .all-partner {
   margin-bottom: 60px;
-  gap: 24px;
+  gap: 40px;
   animation: scroll 10s linear infinite;
 }
 @media screen and (max-width: 768px) {
   main .partners .all-partner {
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .partners .all-partner {
+    gap: 20px;
   }
 }
 main .partners .all-partner img {
@@ -742,6 +747,72 @@ footer .footer-main .travel-destination p {
   footer .footer-main .travel-destination p {
     font-size: 8px;
   }
+}
+
+#aboutpage {
+  background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)), url("../images/aboutPage/aboutpage.png");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+#aboutpage .navbar-about .material-symbols-outlined {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  #aboutpage .navbar-about .material-symbols-outlined {
+    color: #FFFFFF;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+#aboutpage .navbar-about img {
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  #aboutpage .navbar-about img {
+    width: 100px;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+  }
+}
+#aboutpage .navbar-about ul {
+  list-style: none;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  #aboutpage .navbar-about ul {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #aboutpage .navbar-about ul {
+    display: none;
+  }
+}
+#aboutpage .navbar-about ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#aboutpage .navbar-about ul a:hover {
+  color: #FF8C00;
+}
+#aboutpage .navbar-about ul #sign a {
+  color: #FFFFFF;
+}
+#aboutpage .navbar-about ul #home {
+  color: #FF8C00;
+}
+#aboutpage #aboutus {
+  font-size: 56px;
+  margin-top: 125px;
+  text-align: center;
+}
+#aboutpage #aboutus p {
+  text-align: center;
 }
 
 * {

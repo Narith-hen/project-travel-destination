@@ -1,0 +1,67 @@
+#aboutpage{
+    background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)),
+    url("../images/aboutPage/aboutpage.png");
+  background-size: cover;
+  background-position:center;
+  height: 60vh;
+  @extend .padding-ri-le;
+  .navbar-about{
+    @extend .flex-sp-bet;
+    .material-symbols-outlined{
+        opacity: 0;
+        @include table {
+            color: $white;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+     img {
+      width: 150px;
+      @extend .flex;
+      @include table {
+        width: 100px;
+        position: absolute;
+        top: 14px;
+        left: 20px;
+      }
+    }
+    ul {
+      @extend .flex;
+      list-style: none;
+      gap: 10px;
+      @include laptop{
+        font-size: 0.8rem;
+      }
+      @include table{
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      a:hover {
+        color: $primary;
+      }
+      #sign {
+        @extend .btn;
+        a {
+          color: $white;
+        }
+      }
+      #home{
+        color: $primary;
+      }
+    }
+  }
+  #aboutus{
+        font-size: 56px;
+        margin-top: 125px;
+        text-align: center;
+        p{
+            text-align: center;
+        }
+    }
+}
