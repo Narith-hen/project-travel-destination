@@ -1,24 +1,50 @@
-#aboutpage{
-    background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)),
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#aboutpage {
+  background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)),
     url("../images/aboutPage/aboutpage.png");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   height: 60vh;
   @extend .padding-ri-le;
-  .navbar-about{
+  padding-top: 50px;
+  @include table {
+    height: 50vh;
+  }
+  .navbar-about {
     @extend .flex-sp-bet;
-    .material-symbols-outlined{
-        opacity: 0;
-        @include table {
-            color: $white;
-            opacity: 1;
-            position: absolute;
-            top: 22px;
-            right: 20px;
-            font-size: 2rem;
-        }
+    .material-symbols-outlined {
+      opacity: 0;
+      @include table {
+        color: $white;
+        opacity: 1;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        font-size: 2rem;
+      }
     }
-     img {
+    img {
       width: 150px;
       @extend .flex;
       @include table {
@@ -32,10 +58,10 @@
       @extend .flex;
       list-style: none;
       gap: 10px;
-      @include laptop{
+      @include laptop {
         font-size: 0.8rem;
       }
-      @include table{
+      @include table {
         display: none;
       }
       a {
@@ -51,17 +77,75 @@
           color: $white;
         }
       }
-      #home{
+      #home {
         color: $primary;
       }
     }
   }
-  #aboutus{
-        font-size: 56px;
-        margin-top: 125px;
-        text-align: center;
-        p{
-            text-align: center;
-        }
+  #aboutus {
+    font-size: 56px;
+    @extend .flex;
+
+    @include table{
+      font-size: 40px
     }
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  #hook {
+    @extend .flex;
+
+    @include table {
+      font-size: 16px;
+    }
+    @include mobile{
+      font-size: 14px;
+    }
+  }
+}
+
+.about-main{
+  @extend .padding-ri-le;
+  .about-content-important-travel{
+    @extend .flex;
+    @extend .padding-top-bottom;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+    img{
+      width: 800px;
+      border-bottom-left-radius: 400px;
+      border-top-left-radius: 400px;
+      @extend .animation;
+    }
+    .about-text-important-travel{
+      h1{
+        @extend .animation;
+        color: $main-color;
+        padding-bottom: 60px;
+        font-size: 44px;
+        span{
+          color: $primary;
+        }
+      }
+      p{
+        @extend .animation;
+        padding-bottom: 32px  ;
+        width: 800px;
+        text-align: justify;
+        font-size: 18px;
+      }
+    }
+  }
+  .why-should-we-go{
+     background:  linear-gradient(rgba(48, 47, 47, 0.627), rgba(33, 33, 33, 0.558)), url("../images/aboutPage/Group 83.png");
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+    .why-should-we-go-text{
+      
+    }
+  }
+ 
 }

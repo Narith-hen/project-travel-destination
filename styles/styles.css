@@ -1,4 +1,4 @@
-.flex, #aboutpage .navbar-about ul, #aboutpage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
+.flex, .about-main .about-content-important-travel, #aboutpage #hook, #aboutpage #aboutus, #aboutpage .navbar-about ul, #aboutpage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +10,12 @@
   align-items: center;
 }
 
-.padding-ri-le, #aboutpage, main, header {
+.padding-ri-le, .about-main, #aboutpage, main, header {
   padding: 0px 100px;
+}
+
+.padding-top-bottom, .about-main .about-content-important-travel {
+  padding: 100px 0px;
 }
 
 .btn, #aboutpage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
@@ -32,10 +36,10 @@
   border-radius: 8px;
 }
 
-.animation, main .total-price .price .price-1, main .total-price .total-text, main .content .popular-restaurant .cards-rest-all .cards-rest, main .content .card-pro .cards {
-  animation: appear 5s linear;
+.animation, .about-main .about-content-important-travel .about-text-important-travel p, .about-main .about-content-important-travel .about-text-important-travel h1, .about-main .about-content-important-travel img, main .total-price .price .price-1, main .total-price .total-text, main .content .popular-restaurant .cards-rest-all .cards-rest, main .content .card-pro .cards {
+  animation: appear 1.5s ease-out;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 50%;
 }
 
 header {
@@ -43,6 +47,7 @@ header {
   background-size: cover;
   background-position: top center;
   height: 80vh;
+  padding-top: 50px;
 }
 header .navbar .material-symbols-outlined {
   opacity: 0;
@@ -749,11 +754,35 @@ footer .footer-main .travel-destination p {
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 #aboutpage {
   background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)), url("../images/aboutPage/aboutpage.png");
   background-size: cover;
   background-position: center;
   height: 60vh;
+  padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  #aboutpage {
+    height: 50vh;
+  }
 }
 #aboutpage .navbar-about .material-symbols-outlined {
   opacity: 0;
@@ -808,13 +837,57 @@ footer .footer-main .travel-destination p {
 }
 #aboutpage #aboutus {
   font-size: 56px;
-  margin-top: 125px;
-  text-align: center;
 }
-#aboutpage #aboutus p {
-  text-align: center;
+@media screen and (max-width: 768px) {
+  #aboutpage #aboutus {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #aboutpage #aboutus {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #aboutpage #hook {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #aboutpage #hook {
+    font-size: 14px;
+  }
 }
 
+.about-main .about-content-important-travel {
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.about-main .about-content-important-travel img {
+  width: 800px;
+  border-bottom-left-radius: 400px;
+  border-top-left-radius: 400px;
+}
+.about-main .about-content-important-travel .about-text-important-travel h1 {
+  color: #001E60;
+  padding-bottom: 60px;
+  font-size: 44px;
+}
+.about-main .about-content-important-travel .about-text-important-travel h1 span {
+  color: #FF8C00;
+}
+.about-main .about-content-important-travel .about-text-important-travel p {
+  padding-bottom: 32px;
+  width: 800px;
+  text-align: justify;
+  font-size: 18px;
+}
+.about-main .why-should-we-go {
+  background: linear-gradient(rgba(48, 47, 47, 0.627), rgba(33, 33, 33, 0.558)), url("../images/aboutPage/Group 83.png");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
 * {
   padding: 0;
   margin: 0;

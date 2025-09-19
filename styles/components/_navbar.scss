@@ -9,6 +9,7 @@ header {
   background-position: top center;
   height: 80vh;
   @extend .padding-ri-le;
+  padding-top: 50px;
   .navbar {
     @extend .flex-sp-bet;
     .material-symbols-outlined{
