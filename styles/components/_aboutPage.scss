@@ -115,7 +115,7 @@
     @extend .padding-top-bottom;
     flex-wrap: wrap;
     gap: 50px;
-    @include table{
+    @include table {
       padding-top: 50px;
       display: flow-root;
       padding-bottom: 40px;
@@ -124,23 +124,23 @@
 
     @include mobile {
       @extend .flex;
-    @extend .padding-top-bottom;
-    flex-wrap: wrap;
-    gap: 50px;
+      @extend .padding-top-bottom;
+      flex-wrap: wrap;
+      gap: 50px;
     }
     img {
       width: 800px;
       border-bottom-left-radius: 400px;
       border-top-left-radius: 400px;
       @extend .animation;
-      @include table{
+      @include table {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         width: 280px;
         float: left;
-        shape-outside:inset(-100px);
+        shape-outside: inset(-100px);
       }
-      @include mobile{
+      @include mobile {
         width: 350px;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
@@ -149,9 +149,7 @@
       }
     }
 
-
     .about-text-important-travel {
-      
       h1 {
         flex-wrap: wrap;
         @extend .animation;
@@ -160,21 +158,22 @@
         span {
           color: $primary;
         }
-        @include table{
+        @include table {
           font-size: 24px;
           padding-bottom: 20px;
-          padding-left: 0px;
+          padding-left: 300px;
         }
-        @include mobile{
-          font-size: 20px;
+        @include mobile {
+          font-size: 16px;
           flex-wrap: wrap;
           @extend .animation;
           color: $main-color;
           padding-bottom: 10px;
           padding-top: 8px;
+          padding-left: 0px;
         }
       }
-      
+
       p {
         flex-wrap: wrap;
         @extend .animation;
@@ -188,18 +187,18 @@
           padding-bottom: 10px;
           padding-left: 300px;
         }
-        @include mobile{
+        @include mobile {
           padding-left: 0px;
           font-size: 10px;
-          padding-bottom: 10px;
+          padding-bottom: 5px;
         }
       }
-      #bottom{
+      #bottom {
         @include table {
           padding-left: 0px;
           padding-top: 10px;
         }
-        @include mobile{
+        @include mobile {
           padding-top: 0px;
         }
       }
@@ -217,13 +216,18 @@
     @extend .flex;
     @extend .animation;
 
-    @include table{
+    @include table {
       height: 32vh;
     }
+
+    @include mobile{
+      height: 40vh;
+    }
+
     .why-should-we-go-text {
       text-align: center;
       width: 60%;
-      @include table{
+      @include table {
         width: 90%;
       }
 
@@ -234,8 +238,14 @@
         span {
           color: $primary;
         }
-        @include table{
+        @include table {
           padding-bottom: 10px;
+        }
+
+        @include mobile {
+          font-size: 16px;
+          color: $main-color;
+          padding-bottom: 5px;
         }
       }
       p {
@@ -244,9 +254,20 @@
         padding-bottom: 20px;
         font-weight: 300;
         flex-wrap: wrap;
-        @include table{
+        @include table {
           font-size: 12px;
           padding-bottom: 10px;
+        }
+
+        @include mobile {
+          font-size: 10px;
+          color: rgb(18, 18, 18);
+          font-weight: 500;
+        }
+      }
+      .seeMore {
+        @include mobile{
+          display: none;
         }
       }
     }
@@ -261,19 +282,32 @@
     border-top-right-radius: 320px;
     @extend .animation;
 
-    @include table{
+    @include table {
       margin: 72px 0px;
       border-bottom-left-radius: 100px;
       border-top-right-radius: 100px;
     }
+    @include mobile{
+      margin: 40px 0px ;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 0px;
+      flex-direction: column;
+      
+    }
     .about-text-partner-with-us {
       text-align: center;
-      
+
       h1 {
         color: $white;
         padding-bottom: 20px;
-        @include table{ 
+        @include table {
           font-size: 20px;
+        }
+        @include mobile{
+          padding-bottom:10px;
+          padding-top: 10px;
+          font-weight: 400;
+          font-size: 16px;
         }
       }
       p {
@@ -282,9 +316,13 @@
         font-size: 18px;
         font-weight: 300;
         flex-wrap: wrap;
-        @include table{
+        @include table {
           padding: 0px 40px;
           font-size: 12px;
+        }
+        @include mobile{
+          font-size: 10px;
+          padding-bottom: 10px;
         }
       }
     }
@@ -293,10 +331,13 @@
         width: 850px;
         height: auto;
         border-top-right-radius: 320px;
-        @include table{
+        @include table {
           width: 364px;
           border-top-right-radius: 100px;
-         
+        }
+        @include mobile{
+          width:350px ;
+          border-top-right-radius: 0px;
         }
       }
     }
@@ -310,19 +351,32 @@
       gap: 20px;
       padding-bottom: 25px;
     }
+    @include mobile{
+      flex-direction: column;
+      padding-bottom: 15px;
+      
+    }
     .text-hotel-partners {
       width: 30%;
-      @include table{
+      @include table {
         width: 40%;
+      }
+
+      @include mobile{
+        width: 100%;
       }
       h1 {
         color: $main-color;
         padding-bottom: 20px;
         @extend .animation;
 
-        @include table{
+        @include table {
           font-size: 20px;
           padding-bottom: 10px;
+        }
+
+        @include mobile{
+          font-size: 16px;
         }
       }
       .sub-paragram {
@@ -331,16 +385,23 @@
         padding-bottom: 10px;
         @extend .animation;
 
-        @include table{
+        @include table {
           font-size: 10px;
+        }
+        @include mobile{
+          font-size: 8px;
+          
         }
       }
       p {
-        font-size: 18px;   
+        font-size: 18px;
         @extend .animation;
 
-        @include table{
+        @include table {
           font-size: 12px;
+        }
+        @include mobile{
+          font-size: 10px;
         }
       }
     }
@@ -349,17 +410,25 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      @include table{
+      @include table {
         width: 70%;
+      }
+
+      @include mobile{
+        width: 100%;
       }
       img {
         width: 190px;
         padding-right: 40px;
         @extend .animation;
 
-        @include table{
+        @include table {
           width: 100px;
           padding-right: 20px;
+        }
+        @include mobile{
+          width: 100px;
+          padding-right: 14px;
         }
       }
     }
@@ -376,19 +445,31 @@
       padding-bottom: 25px;
       padding-top: 25px;
     }
+    @include mobile {
+      gap: 10px;
+      flex-direction:  column;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
     .text-payment-partners {
       width: 30%;
-      @include table{
+      @include table {
         width: 40%;
+      }
+      @include mobile{
+        width: 100%;
       }
       h1 {
         color: $main-color;
         padding-bottom: 20px;
         @extend .animation;
 
-        @include table{
+        @include table {
           font-size: 20px;
           padding-bottom: 10px;
+        }
+        @include mobile{
+          font-size: 16px;
         }
       }
       p {
@@ -396,8 +477,11 @@
         @extend .animation;
         width: 95%;
 
-        @include table{
+        @include table {
           font-size: 12px;
+        }
+        @include mobile{
+          font-size: 10px;
         }
       }
     }
@@ -405,79 +489,103 @@
       width: 70%;
       display: flex;
       align-items: center;
-      @include table{
+      @include table {
         width: 60%;
+      }
+      @include mobile{
+        width: 100%;
       }
       img {
         width: 150px;
         padding-right: 40px;
         @extend .animation;
 
-        @include table{
+        @include table {
           width: 100px;
           padding-right: 20px;
+        }
+
+        @include mobile{
+          width: 60px;
         }
       }
     }
   }
 
-  .online-hotel-booking{
+  .online-hotel-booking {
     padding-bottom: 50px;
     padding-top: 50px;
-    @include table{
+    @include table {
       padding: 25px 0px;
     }
-    h1{
+    h1 {
       text-align: center;
       padding-bottom: 40px;
       color: $main-color;
       @extend .animation;
 
-      @include table{
+      @include table {
         font-size: 20px;
         padding-bottom: 20px;
       }
+
+      @include mobile{
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
     }
-    .sub-hotel-booking{
+    .sub-hotel-booking {
       text-align: center;
       padding-bottom: 40px;
       @extend .animation;
 
-      @include table{
+      @include table {
         padding-bottom: 20px;
         font-size: 12px;
       }
+      @include mobile{
+        font-size: 10px;
+        padding-bottom: 10px;
+      }
     }
-    .text-hotel-booking{
+    .text-hotel-booking {
       text-align: center;
       font-size: 18px;
       padding-bottom: 80px;
       @extend .animation;
 
-      @include table{
+      @include table {
         padding-bottom: 20px;
         font-size: 12px;
       }
+
+      @include mobile{
+        font-size: 10px;
+        text-align: justify;
+      }
     }
-    .show-more{
+    .show-more {
       color: $sub-color;
       text-align: center;
       @extend .animation;
 
-      @include table{
+      @include table {
         font-size: 12px;
       }
     }
   }
 
-  .download{
+  .download {
     text-align: center;
-    img{
+    img {
       width: 1400px;
       @extend .animation;
 
-      @include table{
+      @include table {
         width: 730px;
+      }
+      @include mobile{
+        width: 350px;
       }
     }
   }

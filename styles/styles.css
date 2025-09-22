@@ -915,16 +915,17 @@ footer .footer-main .travel-destination p {
   .about-main .about-content-important-travel .about-text-important-travel h1 {
     font-size: 24px;
     padding-bottom: 20px;
-    padding-left: 0px;
+    padding-left: 300px;
   }
 }
 @media screen and (max-width: 425px) {
   .about-main .about-content-important-travel .about-text-important-travel h1 {
-    font-size: 20px;
+    font-size: 16px;
     flex-wrap: wrap;
     color: #001E60;
     padding-bottom: 10px;
     padding-top: 8px;
+    padding-left: 0px;
   }
 }
 .about-main .about-content-important-travel .about-text-important-travel p {
@@ -946,7 +947,7 @@ footer .footer-main .travel-destination p {
   .about-main .about-content-important-travel .about-text-important-travel p {
     padding-left: 0px;
     font-size: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -971,6 +972,11 @@ footer .footer-main .travel-destination p {
     height: 32vh;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .why-should-we-go {
+    height: 40vh;
+  }
+}
 .about-main .why-should-we-go .why-should-we-go-text {
   text-align: center;
   width: 60%;
@@ -992,6 +998,13 @@ footer .footer-main .travel-destination p {
     padding-bottom: 10px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .why-should-we-go .why-should-we-go-text h1 {
+    font-size: 16px;
+    color: #001E60;
+    padding-bottom: 5px;
+  }
+}
 .about-main .why-should-we-go .why-should-we-go-text p {
   color: #FFFFFF;
   padding-bottom: 20px;
@@ -1002,6 +1015,18 @@ footer .footer-main .travel-destination p {
   .about-main .why-should-we-go .why-should-we-go-text p {
     font-size: 12px;
     padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .why-should-we-go .why-should-we-go-text p {
+    font-size: 10px;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .why-should-we-go .why-should-we-go-text .seeMore {
+    display: none;
   }
 }
 .about-main .about-partner-with-us {
@@ -1020,6 +1045,14 @@ footer .footer-main .travel-destination p {
     border-top-right-radius: 100px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .about-partner-with-us {
+    margin: 40px 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    flex-direction: column;
+  }
+}
 .about-main .about-partner-with-us .about-text-partner-with-us {
   text-align: center;
 }
@@ -1030,6 +1063,14 @@ footer .footer-main .travel-destination p {
 @media screen and (max-width: 768px) {
   .about-main .about-partner-with-us .about-text-partner-with-us h1 {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .about-partner-with-us .about-text-partner-with-us h1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 .about-main .about-partner-with-us .about-text-partner-with-us p {
@@ -1045,6 +1086,12 @@ footer .footer-main .travel-destination p {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .about-partner-with-us .about-text-partner-with-us p {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+}
 .about-main .about-partner-with-us .about-img-partner-with-us img {
   width: 850px;
   height: auto;
@@ -1054,6 +1101,12 @@ footer .footer-main .travel-destination p {
   .about-main .about-partner-with-us .about-img-partner-with-us img {
     width: 364px;
     border-top-right-radius: 100px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .about-partner-with-us .about-img-partner-with-us img {
+    width: 350px;
+    border-top-right-radius: 0px;
   }
 }
 .about-main .hotel-partners {
@@ -1068,12 +1121,23 @@ footer .footer-main .travel-destination p {
     padding-bottom: 25px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .hotel-partners {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+}
 .about-main .hotel-partners .text-hotel-partners {
   width: 30%;
 }
 @media screen and (max-width: 768px) {
   .about-main .hotel-partners .text-hotel-partners {
     width: 40%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .hotel-partners .text-hotel-partners {
+    width: 100%;
   }
 }
 .about-main .hotel-partners .text-hotel-partners h1 {
@@ -1086,6 +1150,11 @@ footer .footer-main .travel-destination p {
     padding-bottom: 10px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .hotel-partners .text-hotel-partners h1 {
+    font-size: 16px;
+  }
+}
 .about-main .hotel-partners .text-hotel-partners .sub-paragram {
   font-size: 14px;
   color: gray;
@@ -1096,12 +1165,22 @@ footer .footer-main .travel-destination p {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .hotel-partners .text-hotel-partners .sub-paragram {
+    font-size: 8px;
+  }
+}
 .about-main .hotel-partners .text-hotel-partners p {
   font-size: 18px;
 }
 @media screen and (max-width: 768px) {
   .about-main .hotel-partners .text-hotel-partners p {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .hotel-partners .text-hotel-partners p {
+    font-size: 10px;
   }
 }
 .about-main .hotel-partners .img-hotel-partners {
@@ -1115,6 +1194,11 @@ footer .footer-main .travel-destination p {
     width: 70%;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .hotel-partners .img-hotel-partners {
+    width: 100%;
+  }
+}
 .about-main .hotel-partners .img-hotel-partners img {
   width: 190px;
   padding-right: 40px;
@@ -1123,6 +1207,12 @@ footer .footer-main .travel-destination p {
   .about-main .hotel-partners .img-hotel-partners img {
     width: 100px;
     padding-right: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .hotel-partners .img-hotel-partners img {
+    width: 100px;
+    padding-right: 14px;
   }
 }
 .about-main .payment-partners {
@@ -1139,12 +1229,25 @@ footer .footer-main .travel-destination p {
     padding-top: 25px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .payment-partners {
+    gap: 10px;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
 .about-main .payment-partners .text-payment-partners {
   width: 30%;
 }
 @media screen and (max-width: 768px) {
   .about-main .payment-partners .text-payment-partners {
     width: 40%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .payment-partners .text-payment-partners {
+    width: 100%;
   }
 }
 .about-main .payment-partners .text-payment-partners h1 {
@@ -1157,6 +1260,11 @@ footer .footer-main .travel-destination p {
     padding-bottom: 10px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .payment-partners .text-payment-partners h1 {
+    font-size: 16px;
+  }
+}
 .about-main .payment-partners .text-payment-partners p {
   font-size: 18px;
   width: 95%;
@@ -1164,6 +1272,11 @@ footer .footer-main .travel-destination p {
 @media screen and (max-width: 768px) {
   .about-main .payment-partners .text-payment-partners p {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .payment-partners .text-payment-partners p {
+    font-size: 10px;
   }
 }
 .about-main .payment-partners .img-payment-partners {
@@ -1176,6 +1289,11 @@ footer .footer-main .travel-destination p {
     width: 60%;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .payment-partners .img-payment-partners {
+    width: 100%;
+  }
+}
 .about-main .payment-partners .img-payment-partners img {
   width: 150px;
   padding-right: 40px;
@@ -1184,6 +1302,11 @@ footer .footer-main .travel-destination p {
   .about-main .payment-partners .img-payment-partners img {
     width: 100px;
     padding-right: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .payment-partners .img-payment-partners img {
+    width: 60px;
   }
 }
 .about-main .online-hotel-booking {
@@ -1206,6 +1329,12 @@ footer .footer-main .travel-destination p {
     padding-bottom: 20px;
   }
 }
+@media screen and (max-width: 425px) {
+  .about-main .online-hotel-booking h1 {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
 .about-main .online-hotel-booking .sub-hotel-booking {
   text-align: center;
   padding-bottom: 40px;
@@ -1214,6 +1343,12 @@ footer .footer-main .travel-destination p {
   .about-main .online-hotel-booking .sub-hotel-booking {
     padding-bottom: 20px;
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .online-hotel-booking .sub-hotel-booking {
+    font-size: 10px;
+    padding-bottom: 10px;
   }
 }
 .about-main .online-hotel-booking .text-hotel-booking {
@@ -1225,6 +1360,12 @@ footer .footer-main .travel-destination p {
   .about-main .online-hotel-booking .text-hotel-booking {
     padding-bottom: 20px;
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .online-hotel-booking .text-hotel-booking {
+    font-size: 10px;
+    text-align: justify;
   }
 }
 .about-main .online-hotel-booking .show-more {
@@ -1245,6 +1386,11 @@ footer .footer-main .travel-destination p {
 @media screen and (max-width: 768px) {
   .about-main .download img {
     width: 730px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .download img {
+    width: 350px;
   }
 }
 
