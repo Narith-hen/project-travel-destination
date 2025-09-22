@@ -1,16 +1,16 @@
-.flex, .about-main .about-content-important-travel, #aboutpage #hook, #aboutpage #aboutus, #aboutpage .navbar-about ul, #aboutpage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
+.flex, .about-main .why-should-we-go, .about-main .about-content-important-travel, #aboutPage #hook, #aboutPage #aboutus, #aboutPage .navbar-about ul, #aboutPage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-sp-bet, #aboutpage .navbar-about, header .navbar {
+.flex-sp-bet, #aboutPage .navbar-about, header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.padding-ri-le, .about-main, #aboutpage, main, header {
+.padding-ri-le, #aboutPage, main, header {
   padding: 0px 100px;
 }
 
@@ -18,7 +18,7 @@
   padding: 100px 0px;
 }
 
-.btn, #aboutpage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
+.btn, #aboutPage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
   padding: 10px 20px;
   background: #0050FF;
   border-radius: 8px;
@@ -36,7 +36,7 @@
   border-radius: 8px;
 }
 
-.animation, .about-main .about-content-important-travel .about-text-important-travel p, .about-main .about-content-important-travel .about-text-important-travel h1, .about-main .about-content-important-travel img, main .total-price .price .price-1, main .total-price .total-text, main .content .popular-restaurant .cards-rest-all .cards-rest, main .content .card-pro .cards {
+.animation, .about-main .download img, .about-main .online-hotel-booking .show-more, .about-main .online-hotel-booking .text-hotel-booking, .about-main .online-hotel-booking .sub-hotel-booking, .about-main .online-hotel-booking h1, .about-main .payment-partners .img-payment-partners img, .about-main .payment-partners .text-payment-partners p, .about-main .payment-partners .text-payment-partners h1, .about-main .hotel-partners .img-hotel-partners img, .about-main .hotel-partners .text-hotel-partners p, .about-main .hotel-partners .text-hotel-partners .sub-paragram, .about-main .hotel-partners .text-hotel-partners h1, .about-main .about-partner-with-us, .about-main .why-should-we-go .why-should-we-go-text p, .about-main .why-should-we-go .why-should-we-go-text h1, .about-main .why-should-we-go, .about-main .about-content-important-travel .about-text-important-travel p, .about-main .about-content-important-travel .about-text-important-travel h1, .about-main .about-content-important-travel img, main .total-price .price .price-1, main .total-price .total-text, main .content .popular-restaurant .cards-rest-all .cards-rest, main .content .card-pro .cards {
   animation: appear 1.5s ease-out;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
@@ -772,7 +772,7 @@ footer .footer-main .travel-destination p {
     transform: translateX(-50%);
   }
 }
-#aboutpage {
+#aboutPage {
   background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)), url("../images/aboutPage/aboutpage.png");
   background-size: cover;
   background-position: center;
@@ -780,15 +780,15 @@ footer .footer-main .travel-destination p {
   padding-top: 50px;
 }
 @media screen and (max-width: 768px) {
-  #aboutpage {
+  #aboutPage {
     height: 50vh;
   }
 }
-#aboutpage .navbar-about .material-symbols-outlined {
+#aboutPage .navbar-about .material-symbols-outlined {
   opacity: 0;
 }
 @media screen and (max-width: 768px) {
-  #aboutpage .navbar-about .material-symbols-outlined {
+  #aboutPage .navbar-about .material-symbols-outlined {
     color: #FFFFFF;
     opacity: 1;
     position: absolute;
@@ -797,64 +797,67 @@ footer .footer-main .travel-destination p {
     font-size: 2rem;
   }
 }
-#aboutpage .navbar-about img {
+#aboutPage .navbar-about img {
   width: 150px;
 }
 @media screen and (max-width: 768px) {
-  #aboutpage .navbar-about img {
+  #aboutPage .navbar-about img {
     width: 100px;
     position: absolute;
     top: 14px;
     left: 20px;
   }
 }
-#aboutpage .navbar-about ul {
+#aboutPage .navbar-about ul {
   list-style: none;
   gap: 10px;
 }
 @media screen and (max-width: 1024px) {
-  #aboutpage .navbar-about ul {
+  #aboutPage .navbar-about ul {
     font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 768px) {
-  #aboutpage .navbar-about ul {
+  #aboutPage .navbar-about ul {
     display: none;
   }
 }
-#aboutpage .navbar-about ul a {
+#aboutPage .navbar-about ul #aboutContent {
+  color: #FF8C00;
+}
+#aboutPage .navbar-about ul a {
   text-decoration: none;
   color: #FFFFFF;
 }
-#aboutpage .navbar-about ul a:hover {
+#aboutPage .navbar-about ul a:hover {
   color: #FF8C00;
 }
-#aboutpage .navbar-about ul #sign a {
+#aboutPage .navbar-about ul #sign a {
   color: #FFFFFF;
 }
-#aboutpage .navbar-about ul #home {
+#aboutPage .navbar-about ul #home {
   color: #FF8C00;
 }
-#aboutpage #aboutus {
+#aboutPage #aboutus {
   font-size: 56px;
 }
 @media screen and (max-width: 768px) {
-  #aboutpage #aboutus {
+  #aboutPage #aboutus {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 425px) {
-  #aboutpage #aboutus {
+  #aboutPage #aboutus {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 768px) {
-  #aboutpage #hook {
+  #aboutPage #hook {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 425px) {
-  #aboutpage #hook {
+  #aboutPage #hook {
     font-size: 14px;
   }
 }
@@ -863,31 +866,388 @@ footer .footer-main .travel-destination p {
   flex-wrap: wrap;
   gap: 50px;
 }
+@media screen and (max-width: 768px) {
+  .about-main .about-content-important-travel {
+    padding-top: 50px;
+    display: flow-root;
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .about-content-important-travel {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
 .about-main .about-content-important-travel img {
   width: 800px;
   border-bottom-left-radius: 400px;
   border-top-left-radius: 400px;
 }
+@media screen and (max-width: 768px) {
+  .about-main .about-content-important-travel img {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 280px;
+    float: left;
+    shape-outside: inset(-100px);
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .about-content-important-travel img {
+    width: 350px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    float: none;
+    shape-outside: none;
+  }
+}
 .about-main .about-content-important-travel .about-text-important-travel h1 {
+  flex-wrap: wrap;
   color: #001E60;
   padding-bottom: 60px;
-  font-size: 44px;
 }
 .about-main .about-content-important-travel .about-text-important-travel h1 span {
   color: #FF8C00;
 }
+@media screen and (max-width: 768px) {
+  .about-main .about-content-important-travel .about-text-important-travel h1 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .about-content-important-travel .about-text-important-travel h1 {
+    font-size: 20px;
+    flex-wrap: wrap;
+    color: #001E60;
+    padding-bottom: 10px;
+    padding-top: 8px;
+  }
+}
 .about-main .about-content-important-travel .about-text-important-travel p {
+  flex-wrap: wrap;
   padding-bottom: 32px;
   width: 800px;
   text-align: justify;
   font-size: 18px;
 }
+@media screen and (max-width: 768px) {
+  .about-main .about-content-important-travel .about-text-important-travel p {
+    font-size: 12px;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 300px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .about-content-important-travel .about-text-important-travel p {
+    padding-left: 0px;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-main .about-content-important-travel .about-text-important-travel #bottom {
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-main .about-content-important-travel .about-text-important-travel #bottom {
+    padding-top: 0px;
+  }
+}
 .about-main .why-should-we-go {
-  background: linear-gradient(rgba(48, 47, 47, 0.627), rgba(33, 33, 33, 0.558)), url("../images/aboutPage/Group 83.png");
+  background: linear-gradient(rgba(174, 170, 170, 0.627), rgba(147, 147, 147, 0.558)), url("../images/aboutPage/Group 83.png");
   background-size: cover;
   background-position: center;
-  height: 40vh;
+  height: 60vh;
 }
+@media screen and (max-width: 768px) {
+  .about-main .why-should-we-go {
+    height: 32vh;
+  }
+}
+.about-main .why-should-we-go .why-should-we-go-text {
+  text-align: center;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .about-main .why-should-we-go .why-should-we-go-text {
+    width: 90%;
+  }
+}
+.about-main .why-should-we-go .why-should-we-go-text h1 {
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+.about-main .why-should-we-go .why-should-we-go-text h1 span {
+  color: #FF8C00;
+}
+@media screen and (max-width: 768px) {
+  .about-main .why-should-we-go .why-should-we-go-text h1 {
+    padding-bottom: 10px;
+  }
+}
+.about-main .why-should-we-go .why-should-we-go-text p {
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  font-weight: 300;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .about-main .why-should-we-go .why-should-we-go-text p {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+}
+.about-main .about-partner-with-us {
+  background-color: #A17D45;
+  margin: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 320px;
+  border-top-right-radius: 320px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .about-partner-with-us {
+    margin: 72px 0px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+}
+.about-main .about-partner-with-us .about-text-partner-with-us {
+  text-align: center;
+}
+.about-main .about-partner-with-us .about-text-partner-with-us h1 {
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .about-partner-with-us .about-text-partner-with-us h1 {
+    font-size: 20px;
+  }
+}
+.about-main .about-partner-with-us .about-text-partner-with-us p {
+  color: #FFFFFF;
+  padding: 0px 230px;
+  font-size: 18px;
+  font-weight: 300;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .about-main .about-partner-with-us .about-text-partner-with-us p {
+    padding: 0px 40px;
+    font-size: 12px;
+  }
+}
+.about-main .about-partner-with-us .about-img-partner-with-us img {
+  width: 850px;
+  height: auto;
+  border-top-right-radius: 320px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .about-partner-with-us .about-img-partner-with-us img {
+    width: 364px;
+    border-top-right-radius: 100px;
+  }
+}
+.about-main .hotel-partners {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid 1px rgba(199, 199, 199, 0.725);
+}
+@media screen and (max-width: 768px) {
+  .about-main .hotel-partners {
+    gap: 20px;
+    padding-bottom: 25px;
+  }
+}
+.about-main .hotel-partners .text-hotel-partners {
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .about-main .hotel-partners .text-hotel-partners {
+    width: 40%;
+  }
+}
+.about-main .hotel-partners .text-hotel-partners h1 {
+  color: #001E60;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .hotel-partners .text-hotel-partners h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+.about-main .hotel-partners .text-hotel-partners .sub-paragram {
+  font-size: 14px;
+  color: gray;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .hotel-partners .text-hotel-partners .sub-paragram {
+    font-size: 10px;
+  }
+}
+.about-main .hotel-partners .text-hotel-partners p {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .hotel-partners .text-hotel-partners p {
+    font-size: 12px;
+  }
+}
+.about-main .hotel-partners .img-hotel-partners {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .about-main .hotel-partners .img-hotel-partners {
+    width: 70%;
+  }
+}
+.about-main .hotel-partners .img-hotel-partners img {
+  width: 190px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .hotel-partners .img-hotel-partners img {
+    width: 100px;
+    padding-right: 20px;
+  }
+}
+.about-main .payment-partners {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-bottom: solid 1px rgba(199, 199, 199, 0.725);
+}
+@media screen and (max-width: 768px) {
+  .about-main .payment-partners {
+    gap: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+}
+.about-main .payment-partners .text-payment-partners {
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .about-main .payment-partners .text-payment-partners {
+    width: 40%;
+  }
+}
+.about-main .payment-partners .text-payment-partners h1 {
+  color: #001E60;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .payment-partners .text-payment-partners h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+.about-main .payment-partners .text-payment-partners p {
+  font-size: 18px;
+  width: 95%;
+}
+@media screen and (max-width: 768px) {
+  .about-main .payment-partners .text-payment-partners p {
+    font-size: 12px;
+  }
+}
+.about-main .payment-partners .img-payment-partners {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about-main .payment-partners .img-payment-partners {
+    width: 60%;
+  }
+}
+.about-main .payment-partners .img-payment-partners img {
+  width: 150px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .payment-partners .img-payment-partners img {
+    width: 100px;
+    padding-right: 20px;
+  }
+}
+.about-main .online-hotel-booking {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .online-hotel-booking {
+    padding: 25px 0px;
+  }
+}
+.about-main .online-hotel-booking h1 {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #001E60;
+}
+@media screen and (max-width: 768px) {
+  .about-main .online-hotel-booking h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+.about-main .online-hotel-booking .sub-hotel-booking {
+  text-align: center;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .online-hotel-booking .sub-hotel-booking {
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+}
+.about-main .online-hotel-booking .text-hotel-booking {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .online-hotel-booking .text-hotel-booking {
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+}
+.about-main .online-hotel-booking .show-more {
+  color: #7F8CAB;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about-main .online-hotel-booking .show-more {
+    font-size: 12px;
+  }
+}
+.about-main .download {
+  text-align: center;
+}
+.about-main .download img {
+  width: 1400px;
+}
+@media screen and (max-width: 768px) {
+  .about-main .download img {
+    width: 730px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;

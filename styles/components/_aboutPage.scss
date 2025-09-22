@@ -11,16 +11,16 @@
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-50%);
-    }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-#aboutpage {
+#aboutPage {
   background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)),
     url("../images/aboutPage/aboutpage.png");
   background-size: cover;
@@ -64,6 +64,9 @@
       @include table {
         display: none;
       }
+      #aboutContent {
+        color: $primary;
+      }
       a {
         text-decoration: none;
         color: $white;
@@ -86,8 +89,8 @@
     font-size: 56px;
     @extend .flex;
 
-    @include table{
-      font-size: 40px
+    @include table {
+      font-size: 40px;
     }
     @include mobile {
       font-size: 30px;
@@ -99,53 +102,383 @@
     @include table {
       font-size: 16px;
     }
-    @include mobile{
+    @include mobile {
       font-size: 14px;
     }
   }
 }
 
-.about-main{
-  @extend .padding-ri-le;
-  .about-content-important-travel{
+.about-main {
+  // @extend .padding-ri-le;
+  .about-content-important-travel {
     @extend .flex;
     @extend .padding-top-bottom;
     flex-wrap: wrap;
     gap: 50px;
-    
-    img{
+    @include table{
+      padding-top: 50px;
+      display: flow-root;
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+
+    @include mobile {
+      @extend .flex;
+    @extend .padding-top-bottom;
+    flex-wrap: wrap;
+    gap: 50px;
+    }
+    img {
       width: 800px;
       border-bottom-left-radius: 400px;
       border-top-left-radius: 400px;
       @extend .animation;
+      @include table{
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        width: 280px;
+        float: left;
+        shape-outside:inset(-100px);
+      }
+      @include mobile{
+        width: 350px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        float: none;
+        shape-outside: none;
+      }
     }
-    .about-text-important-travel{
-      h1{
+
+
+    .about-text-important-travel {
+      
+      h1 {
+        flex-wrap: wrap;
         @extend .animation;
         color: $main-color;
         padding-bottom: 60px;
-        font-size: 44px;
-        span{
+        span {
           color: $primary;
         }
+        @include table{
+          font-size: 24px;
+          padding-bottom: 20px;
+          padding-left: 0px;
+        }
+        @include mobile{
+          font-size: 20px;
+          flex-wrap: wrap;
+          @extend .animation;
+          color: $main-color;
+          padding-bottom: 10px;
+          padding-top: 8px;
+        }
       }
-      p{
+      
+      p {
+        flex-wrap: wrap;
         @extend .animation;
-        padding-bottom: 32px  ;
+        padding-bottom: 32px;
         width: 800px;
         text-align: justify;
         font-size: 18px;
+        @include table {
+          font-size: 12px;
+          width: 100%;
+          padding-bottom: 10px;
+          padding-left: 300px;
+        }
+        @include mobile{
+          padding-left: 0px;
+          font-size: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      #bottom{
+        @include table {
+          padding-left: 0px;
+          padding-top: 10px;
+        }
+        @include mobile{
+          padding-top: 0px;
+        }
       }
     }
   }
-  .why-should-we-go{
-     background:  linear-gradient(rgba(48, 47, 47, 0.627), rgba(33, 33, 33, 0.558)), url("../images/aboutPage/Group 83.png");
-      background-size: cover;
-      background-position: center;
-      height: 40vh;
-    .why-should-we-go-text{
-      
+  .why-should-we-go {
+    background: linear-gradient(
+        rgba(174, 170, 170, 0.627),
+        rgba(147, 147, 147, 0.558)
+      ),
+      url("../images/aboutPage/Group 83.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    @extend .flex;
+    @extend .animation;
+
+    @include table{
+      height: 32vh;
+    }
+    .why-should-we-go-text {
+      text-align: center;
+      width: 60%;
+      @include table{
+        width: 90%;
+      }
+
+      h1 {
+        @extend .animation;
+        color: $white;
+        padding-bottom: 20px;
+        span {
+          color: $primary;
+        }
+        @include table{
+          padding-bottom: 10px;
+        }
+      }
+      p {
+        color: $white;
+        @extend .animation;
+        padding-bottom: 20px;
+        font-weight: 300;
+        flex-wrap: wrap;
+        @include table{
+          font-size: 12px;
+          padding-bottom: 10px;
+        }
+      }
     }
   }
- 
+  .about-partner-with-us {
+    background-color: $bg-color-partner;
+    margin: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 320px;
+    border-top-right-radius: 320px;
+    @extend .animation;
+
+    @include table{
+      margin: 72px 0px;
+      border-bottom-left-radius: 100px;
+      border-top-right-radius: 100px;
+    }
+    .about-text-partner-with-us {
+      text-align: center;
+      
+      h1 {
+        color: $white;
+        padding-bottom: 20px;
+        @include table{ 
+          font-size: 20px;
+        }
+      }
+      p {
+        color: $white;
+        padding: 0px 230px;
+        font-size: 18px;
+        font-weight: 300;
+        flex-wrap: wrap;
+        @include table{
+          padding: 0px 40px;
+          font-size: 12px;
+        }
+      }
+    }
+    .about-img-partner-with-us {
+      img {
+        width: 850px;
+        height: auto;
+        border-top-right-radius: 320px;
+        @include table{
+          width: 364px;
+          border-top-right-radius: 100px;
+         
+        }
+      }
+    }
+  }
+  .hotel-partners {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px rgba(199, 199, 199, 0.725);
+    @include table {
+      gap: 20px;
+      padding-bottom: 25px;
+    }
+    .text-hotel-partners {
+      width: 30%;
+      @include table{
+        width: 40%;
+      }
+      h1 {
+        color: $main-color;
+        padding-bottom: 20px;
+        @extend .animation;
+
+        @include table{
+          font-size: 20px;
+          padding-bottom: 10px;
+        }
+      }
+      .sub-paragram {
+        font-size: 14px;
+        color: gray;
+        padding-bottom: 10px;
+        @extend .animation;
+
+        @include table{
+          font-size: 10px;
+        }
+      }
+      p {
+        font-size: 18px;   
+        @extend .animation;
+
+        @include table{
+          font-size: 12px;
+        }
+      }
+    }
+    .img-hotel-partners {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      @include table{
+        width: 70%;
+      }
+      img {
+        width: 190px;
+        padding-right: 40px;
+        @extend .animation;
+
+        @include table{
+          width: 100px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
+  .payment-partners {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: solid 1px rgba(199, 199, 199, 0.725);
+    @include table {
+      gap: 20px;
+      padding-bottom: 25px;
+      padding-top: 25px;
+    }
+    .text-payment-partners {
+      width: 30%;
+      @include table{
+        width: 40%;
+      }
+      h1 {
+        color: $main-color;
+        padding-bottom: 20px;
+        @extend .animation;
+
+        @include table{
+          font-size: 20px;
+          padding-bottom: 10px;
+        }
+      }
+      p {
+        font-size: 18px;
+        @extend .animation;
+        width: 95%;
+
+        @include table{
+          font-size: 12px;
+        }
+      }
+    }
+    .img-payment-partners {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      @include table{
+        width: 60%;
+      }
+      img {
+        width: 150px;
+        padding-right: 40px;
+        @extend .animation;
+
+        @include table{
+          width: 100px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
+  .online-hotel-booking{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    @include table{
+      padding: 25px 0px;
+    }
+    h1{
+      text-align: center;
+      padding-bottom: 40px;
+      color: $main-color;
+      @extend .animation;
+
+      @include table{
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+    }
+    .sub-hotel-booking{
+      text-align: center;
+      padding-bottom: 40px;
+      @extend .animation;
+
+      @include table{
+        padding-bottom: 20px;
+        font-size: 12px;
+      }
+    }
+    .text-hotel-booking{
+      text-align: center;
+      font-size: 18px;
+      padding-bottom: 80px;
+      @extend .animation;
+
+      @include table{
+        padding-bottom: 20px;
+        font-size: 12px;
+      }
+    }
+    .show-more{
+      color: $sub-color;
+      text-align: center;
+      @extend .animation;
+
+      @include table{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .download{
+    text-align: center;
+    img{
+      width: 1400px;
+      @extend .animation;
+
+      @include table{
+        width: 730px;
+      }
+    }
+  }
 }
