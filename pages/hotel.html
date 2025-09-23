@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Destination</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+<body>
+    <!-- navbar + welcome -->
+    <header id="hotelPage">
+        <nav class="navbar-hotel">
+            <img src="../images/logo.png" alt="" />
+            <span class="material-symbols-outlined"> menu </span>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About
+                        US</a></li>
+                <li><a id="hotelContent" href="hotel.html">Hotel &
+                        Popular</a></li>
+                <li><a href="customer.html">Customer
+                        Support</a></li>
+                <li id="sign"><a href>Sign in</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="hotel-pupolar">Welcome to <span>Hotel &
+                Pupolar</span></h1>
+        <p id="hookhotel"><span>"</span>Booking easy, Travel
+            happy<span>"</span></p>
+
+    </header>
+
+    <main class="hotel-main">
+
+        <!-- form input -->
+        <div class="booking-box">
+            <h3>Recently Viewed Hotels</h3>
+
+            <div class="form-group">
+                <label>Destination:</label>
+
+                <input type="text" placeholder="City, hotel, place to go">
+
+            </div>
+            <div class="box-check-in-out">
+                <div class="form-group">
+                    <label>Check-In:</label>
+                    <input type="date" value="2025-09-15">
+                </div>
+
+                <div class="form-group">
+                    <label>Duration:</label>
+                    <select>
+                        <option>1 night</option>
+                        <option>2 nights</option>
+                        <option>3 nights</option>
+                        <option>1 week</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Check-Out:</label>
+                    <input type="date" value="2025-09-16">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Guests & Rooms:</label>
+                <select>
+                    <option>2 Adults, 0 Child, 1 Room</option>
+                    <option>1 Adult, 1 Room</option>
+                    <option>2 Adults, 1 Child, 1 Room</option>
+                    <option>3 Adults, 2 Rooms</option>
+                </select>
+            </div>
+
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>Search</button>
+
+            <div class="pay-option">
+                Pay at Hotel
+            </div>
+        </div>
+
+        <!-- Siem Reap – 592 hotels -->
+        <div class="popular-hotels">
+            <h1>Siem Reap – 592 hotels</h1>
+            <div class="hotel-map-cards-hotels">
+                <div class="map">
+                    <div class="map-watch">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7822.182684008833!2d104.85682069467825!3d11.400911722317005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095cbb6e934a05%3A0x8be9f88f1e96df62!2sSiem%20Reap!5e0!3m2!1sen!2skh!4v1758601665742!5m2!1sen!2skh"
+                            width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="star-hotels">
+                        <p class="filter">Filter by:</p>
+                        <p class="star">Star rating</p>
+                        <div class="star-rating">
+                            <label><input type="checkbox"> 5
+                                star</label>
+                            <label><input type="checkbox"> 4
+                                star</label>
+                            <label><input type="checkbox"> 3
+                                star</label>
+                            <label><input type="checkbox"> 2
+                                star</label>
+                            <label><input type="checkbox"> 1
+                                star</label>
+                        </div>
+                        <p class="star padd-top">Review score</p>
+                        <div class="star-rating">
+                            <label><input type="checkbox"> Superb:
+                                9+</label>
+                            <label><input type="checkbox"> Very good:
+                                8+</label>
+                            <label><input type="checkbox"> Good:
+                                7+</label>
+                            <label><input type="checkbox"> Pleasant:
+                                6+</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="hotel-cards">
+
+                    <!-- buttom hotel cards -->
+                    <div class="contents-check-hotel">
+                        <p class="card1 color-btn">Our top picks</p>
+                        <p class="card1">Lowest price first</p>
+                        <p class="card1">Star rating and price</p>
+                        <p class="card1">Top reviewed</p>
+                    </div>
+
+                    <!-- list cards hotel all -->
+
+                    <!-- card1 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/The Jungle.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>The Jungle
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Located in Siem Reap, 1.1 km from King's Road Angkor, The Jungle provides accommodation with a garden, free private parking, a terrace and a restaurant.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">1,203 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.8</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 178,553.71</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/harmony indochine d'Angkor.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>Harmony Indochine d'Angkor
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Taphul Village Area, Siem Reap
+                                        </p>
+
+                                        <p>Harmony Indochine d'Angkor has an outdoor swimming pool, garden, a terrace and restaurant in Siem Reap. This 4-star hotel offers a bar</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">1,543 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.1</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 107,653.66</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card3 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/Residence 1960.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>RESIDENCE 1960
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Situated in Siem Reap, 1.3 km from King's Road Angkor, RESIDENCE 1960 features accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">1,343 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.8</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 69,698.07</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card4 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/koulen central hotel.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>Koulen Central Hotel
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Located in Siem Reap, 800 metres from King's Road Angkor, Koulen Central Hotel provides accommodation with an outdoor swimming pool, free private parking, a fitness centre and a garden.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">1,876 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 259,714.49</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card5 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/the elephant.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>The Elephant
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Set in Siem Reap, 1 km from King's Road Angkor, The Elephant offers accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">2,033 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.7</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 164,285.44</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card6 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/two seasons siem reap hotel.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>Two Seasons Siem Reap Hotel
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Two Seasons Siem Reap Hotel in Siem Reap offers a 5-star experience with a rooftop swimming pool, spa facilities, sun terrace, and lush gardens.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">1,982 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.4</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 224,204.14</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card7 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/shintana saya la maison.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>Shintana Saya La Maison
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Situated in Siem Reap, 3.7 km from Angkor Wat, Shintana Saya La Maison features accommodation with an outdoor swimming pool, free private parking, a garden and a terrace.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">2,203 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.6</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 372,738.78</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card8 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/bayon modern residence.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>Bayon Modern Residence
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Set in Siem Reap, 1.7 km from King's Road Angkor, Bayon Modern Residence offers accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">2,203 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.2</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 180,878.31</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card9 -->
+                    <div class="cards-list-hotels">
+
+                        <div class="box-cards">
+                            <img src="../images/hotel&pupolar/hotels/khmer house resort.webp" alt="">
+                            <div class="box-text">
+                                <div class="text">
+                                    <div class="text-left">
+                                        <a href>Khmer House Resort
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             <i class="fa fa-star">&#9733;</i>
+                                             
+                                        </a>
+
+                                        <p class="location">
+                                            <span class="material-symbols-outlined">
+                                                location_on
+                                            </span>
+                                            Hotel in Siem Reap
+                                        </p>
+
+                                        <p>Located in Siem Reap, 2 km from King's Road Angkor, Khmer House Resort provides accommodation with an outdoor swimming pool, free private parking, a garden and a terrace.</p>
+                                        <a href="">Show more</a>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-right-top">
+                                            <div class="texts">
+                                                <p class="exceptional">Exceptional</p>
+                                                <p class="view">1,201 reviews</p>
+                                            </div>
+                                            <div class="reting">
+                                                <p>9.4</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-right-bottom">
+                                            <p class="price-from">Price from</p>
+                                            <p class="KHR">KHR 140,478.68</p>
+                                            <p class="night">1 night, 2 adults</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttom">
+                                    <button>Check availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="see-all">
+                        <P>See all 592 Hotels in Siem Reap</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-all">
+                <!-- contact-us -->
+                <div class="footer-contact">
+                    <h2>Contact US</h2>
+                    <ul>
+                        <li><a href>Customer support</a></li>
+                        <li><a href>Service guarantee</a></li>
+                        <li><a href>Service info</a></li>
+                    </ul>
+                    <div class="icon">
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-telegram'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <!-- About -->
+                <div class="footer-about">
+                    <h2>About</h2>
+                    <ul>
+                        <li><a href=>About travel destination</a></li>
+                        <li><a href>News</a></li>
+                        <li><a href>Careers</a></li>
+                        <li><a href>Interesting</a></li>
+                        <li><a href>Partners</a></li>
+                    </ul>
+                </div>
+                <!-- Contents -->
+                <div class="footer-contents">
+                    <h2>Contents</h2>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About US</a></li>
+                        <li><a href="hotel.html">Hotel &
+                                Popular</a></li>
+                        <li><a href="customer.html">Customer
+                                Support</a></li>
+                    </ul>
+                </div>
+                <!-- peyments+partner -->
+                <div class="peyments-partner">
+                    <div class="peyments-cards">
+                        <p>Payment methods</p>
+                        <div class="cards">
+                            <img src="../images/peyments/image 12.png" alt="">
+                            <img src="../images/peyments/image 13.png" alt="">
+                            <img src="../images/peyments/image 14.png" alt="">
+                            <img src="../images/peyments/image 15.png" alt="">
+                            <img src="../images/peyments/image 16.png" alt="">
+                            <img src="../images/peyments/image 17.png" alt="">
+                            <img src="../images/peyments/image 18.png" alt="">
+                            <img src="../images/peyments/image 19.png" alt="">
+                            <img src="../images/peyments/image 20.png" alt="">
+                            <img src="../images/peyments/image 21.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-partner">
+                        <p>Our panters</p>
+                        <div class="partners-logo">
+                            <img src="../images/peyments/image 22.png" alt="">
+                            <img src="../images/peyments/image 23.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-footer">
+                <img src="../images/partners/image 11.png" alt="">
+                <img src="../images/peyments/image 22.png" alt="">
+            </div>
+            <div class="travel-destination">
+                <p>© 2025 Travel.destination.com All rights reserved.
+                    <br>Discover the beauty of travel destinations
+                    around the
+                    world.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
