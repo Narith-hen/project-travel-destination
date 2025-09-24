@@ -1899,8 +1899,8 @@ footer .footer-main .travel-destination p {
 }
 @media screen and (max-width: 425px) {
   .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left a {
-    font-size: 8px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
   }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left a i {
@@ -1949,8 +1949,8 @@ footer .footer-main .travel-destination p {
 }
 @media screen and (max-width: 425px) {
   .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left #show-more {
-    font-size: 6px;
-    font-weight: 300;
+    font-size: 8px;
+    font-weight: 400;
   }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right {

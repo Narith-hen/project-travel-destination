@@ -522,8 +522,8 @@
                     font-weight: bold;
                     
                     @include mobile{
-                      font-size: 8px;
-                      font-weight: 400;
+                      font-size: 12px;
+                      font-weight: 600;
                       
                     }
                     
@@ -574,8 +574,8 @@
                   }
                   #show-more{
                     @include mobile{
-                      font-size: 6px ;
-                      font-weight: 300;
+                      font-size: 8px ;
+                      font-weight: 400;
                     }
                   }
                 }
