@@ -11,13 +11,13 @@
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-50%);
-    }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 main {
@@ -47,13 +47,18 @@ main {
       gap: 30px;
       margin-bottom: 50px;
       margin-top: 30px;
-      @include table{
+      @include table {
         gap: 20px;
       }
       .cards {
         @extend .animation;
         box-sizing: border-box;
-        @include mobile{
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        @include mobile {
           animation: none;
         }
         img {
@@ -134,10 +139,7 @@ main {
             font-size: 8px;
           }
         }
-        #siem:hover {
-          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-            rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        }
+
         #phnom {
           @extend .btn;
           background: $white;
@@ -153,30 +155,31 @@ main {
             font-size: 8px;
           }
         }
-        #phnom:hover {
-          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-            rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        }
       }
       .cards-rest-all {
         display: flex;
         gap: 24px;
         flex-wrap: wrap;
+
         @include mobile {
-              gap: 10px;
-            }
+          gap: 10px;
+        }
         .cards-rest {
           @extend .animation;
           background-color: $white;
           border-radius: 16px;
+          transition: transform 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
 
           @include table {
             width: 150px;
           }
           @include mobile {
-              width: 170px;
-              animation: none;
-            }
+            width: 170px;
+            animation: none;
+          }
           img {
             width: 310px;
             @include table {
@@ -259,140 +262,135 @@ main {
             }
           }
         }
-        .koh{
-          img{
+        .koh {
+          img {
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
           }
-        }
-        .cards-rest:hover {
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
       }
     }
   }
 
-
-
   // Our partner
-  .partners{
-    .text{
+  .partners {
+    .text {
       text-align: center;
       margin-bottom: 60px;
-      @include table{
+      @include table {
         margin-bottom: 40px;
-        
       }
-      @include mobile{
-        margin-bottom: 20px
+      @include mobile {
+        margin-bottom: 20px;
       }
-      h1{
+      h1 {
         font-size: 32px;
         font-weight: 800;
-        @include table{
+        @include table {
           font-size: 24px;
           font-weight: 600;
         }
-        @include mobile{
-          font-size:20px;
-          font-weight: 500; 
+        @include mobile {
+          font-size: 20px;
+          font-weight: 500;
         }
       }
     }
-    .all-partner{
+    .all-partner {
       @extend .flex;
       margin-bottom: 60px;
       gap: 40px;
       animation: scroll 10s linear infinite;
-      @include table{
+      @include table {
         margin-bottom: 30px;
       }
-      @include mobile{
+      @include mobile {
         gap: 20px;
       }
-      img{
+      img {
         width: 150px;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1); 
+        }
         @include table {
           width: 120px;
         }
-        @include mobile{
+        @include mobile {
           width: 80px;
         }
       }
     }
   }
 
-
   // total+price
-  .total-price{
+  .total-price {
     margin-bottom: 50px;
-    .total-text{
+    .total-text {
       text-align: center;
       padding: 0px 0px 50px 0px;
       @extend .animation;
-      @include mobile{
+      @include mobile {
         padding: 0px 0px 20px 0px;
         animation: none;
       }
-      h1{
+      h1 {
         font-size: 32px;
         font-weight: 800;
-        @include table{
+        @include table {
           font-size: 24px;
           font-weight: 600;
         }
-        @include mobile{
-          font-size:20px ;
+        @include mobile {
+          font-size: 20px;
           font-weight: 500;
         }
       }
     }
-    .price{
-      
+    .price {
       flex-wrap: wrap;
       @extend .flex;
       gap: 200px;
-      @include table{
+      @include table {
         gap: 100px;
       }
-      @include mobile{
+      @include mobile {
         display: block;
       }
-      .price-1{
+      .price-1 {
         @extend .animation;
         text-align: center;
         color: $main-color;
-        @include mobile{
+        @include mobile {
           margin-bottom: 40px;
           animation: none;
         }
-        span{
+        span {
           font-size: 60px;
           font-weight: 600;
-          @include table{
+          @include table {
             font-size: 32px;
           }
-          @include mobile{
+          @include mobile {
             font-size: 56px;
             font-weight: 500;
           }
-          
         }
-        h1{
-          @include table{
+        h1 {
+          @include table {
             font-size: 20px;
           }
-          @include mobile{
+          @include mobile {
             font-size: 28px;
           }
         }
-        .p-total{
+        .p-total {
           font-size: 14px;
           font-weight: 400;
-          @include table{
+          @include table {
             font-size: 8px;
           }
-          @include mobile{
+          @include mobile {
             font-size: 16px;
             color: $sub-color;
           }

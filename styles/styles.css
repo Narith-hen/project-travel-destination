@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.flex, .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel .card1, .hotel-main .booking-box .search-btn, #hotelPage #hookhotel, #hotelPage #hotel-pupolar, #hotelPage .navbar-hotel ul, #hotelPage .navbar-hotel img, .about-main .why-should-we-go, .about-main .about-content-important-travel, #aboutPage #hook, #aboutPage #aboutus, #aboutPage .navbar-about ul, #aboutPage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
+.flex, .hotel-main .pupolar-places .location-places .box, .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel .card1, .hotel-main .booking-box .search-btn, #hotelPage #hookhotel, #hotelPage #hotel-pupolar, #hotelPage .navbar-hotel ul, #hotelPage .navbar-hotel img, .about-main .why-should-we-go, .about-main .about-content-important-travel, #aboutPage #hook, #aboutPage #aboutus, #aboutPage .navbar-about ul, #aboutPage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   padding: 100px 0px;
 }
 
-.btn, #hotelPage .navbar-hotel ul #sign, #aboutPage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
+.btn, .hotel-main .popular-restaurant .but #phnom, .hotel-main .popular-restaurant .but #siem, #hotelPage .navbar-hotel ul #sign, #aboutPage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
   padding: 10px 20px;
   background: #0050FF;
   border-radius: 8px;
@@ -41,6 +41,17 @@
   animation: appear 1.5s ease-out;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
+}
+
+.places-style, .hotel-main .pupolar-places .location-places .box {
+  background-size: cover;
+  background-position: center;
+  width: 240px;
+  height: 240px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
 }
 
 header {
@@ -200,6 +211,10 @@ main .content .card-pro {
 }
 main .content .card-pro .cards {
   box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+main .content .card-pro .cards:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 425px) {
   main .content .card-pro .cards {
@@ -290,9 +305,6 @@ main .content .popular-restaurant .but #siem {
     font-size: 8px;
   }
 }
-main .content .popular-restaurant .but #siem:hover {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
 main .content .popular-restaurant .but #phnom {
   background: #FFFFFF;
   font-weight: 300;
@@ -311,9 +323,6 @@ main .content .popular-restaurant .but #phnom {
     font-size: 8px;
   }
 }
-main .content .popular-restaurant .but #phnom:hover {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
 main .content .popular-restaurant .cards-rest-all {
   display: flex;
   gap: 24px;
@@ -327,6 +336,10 @@ main .content .popular-restaurant .cards-rest-all {
 main .content .popular-restaurant .cards-rest-all .cards-rest {
   background-color: #FFFFFF;
   border-radius: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+main .content .popular-restaurant .cards-rest-all .cards-rest:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 768px) {
   main .content .popular-restaurant .cards-rest-all .cards-rest {
@@ -436,9 +449,6 @@ main .content .popular-restaurant .cards-rest-all .koh img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-main .content .popular-restaurant .cards-rest-all .cards-rest:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 main .partners .text {
   text-align: center;
   margin-bottom: 60px;
@@ -486,6 +496,10 @@ main .partners .all-partner {
 }
 main .partners .all-partner img {
   width: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+main .partners .all-partner img:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 768px) {
   main .partners .all-partner img {
@@ -1520,6 +1534,11 @@ footer .footer-main .travel-destination p {
     width: 100%;
   }
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .booking-box {
+    padding: 10px;
+  }
+}
 .hotel-main .booking-box h3 {
   font-size: 16px;
   margin-bottom: 16px;
@@ -1667,22 +1686,48 @@ footer .footer-main .travel-destination p {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-hotels {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels {
+    padding: 10px;
+  }
 }
 .hotel-main .popular-hotels h1 {
   font-size: 24px;
   padding-bottom: 20px;
   color: #1a1a1a;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels h1 {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels {
+    flex-direction: column-reverse;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .map {
   width: 30%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .map {
+    width: 100%;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .map .map-watch iframe {
   width: 100%;
@@ -1757,6 +1802,17 @@ footer .footer-main .travel-destination p {
   background-color: rgba(214, 233, 255, 0.4784313725);
   border-radius: 12px;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards :hover {
+    background-color: rgba(214, 233, 255, 0);
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards {
+    width: 100%;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel {
   border: solid 1px #006ce4;
   display: flex;
@@ -1773,43 +1829,88 @@ footer .footer-main .travel-destination p {
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel .card1:last-child {
   border-right: none;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel .card1 {
+    font-size: 8px;
+    padding: 6px 2px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel .color-btn {
   background-color: #006ce4;
   color: white;
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels {
   margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
 }
-.hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels :hover {
-  background-color: rgba(239, 247, 255, 0.4784313725);
+.hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels:hover {
+    transform: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels {
+    transition: none;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards {
   display: flex;
+  justify-content: space-between;
   padding: 16px;
   border: solid 1px rgb(232, 232, 232);
   border-radius: 8px;
   gap: 16px;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards {
+    gap: 10px;
+    padding: 4px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards img {
   width: 200px;
-  border-radius: 8px;
+  border-radius: 6px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards img {
+    width: 80px;
+    height: 80px;
+  }
+}
+.hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text {
+  flex: 1;
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left {
   margin-bottom: 5px;
-  width: 60%;
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left a {
   text-decoration: none;
   color: #006ce4;
   font-weight: bold;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left a {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left a i {
   width: 10px;
   color: gold;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left a i {
+    display: none;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left .location {
   display: flex;
@@ -1822,6 +1923,18 @@ footer .footer-main .travel-destination p {
   font-size: 16px;
   font-weight: 600;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left .location span {
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left .location {
+    font-size: 6px;
+    margin-top: 0px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left p {
   font-size: 12px;
   font-weight: 400;
@@ -1829,19 +1942,37 @@ footer .footer-main .travel-destination p {
   color: rgb(36, 36, 36);
   line-height: 1.5;
 }
-.hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left a {
-  font-size: 12px;
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left p {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-left #show-more {
+    font-size: 6px;
+    font-weight: 300;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right {
+    gap: 10px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top {
+    gap: 4px;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .texts {
   display: flex;
@@ -1852,9 +1983,19 @@ footer .footer-main .travel-destination p {
   font-size: 14px;
   font-weight: 600;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .texts .exceptional {
+    font-size: 8px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .texts .view {
   font-size: 12px;
   color: gray;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .texts .view {
+    font-size: 6px;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .reting {
   background-color: #001E60;
@@ -1864,8 +2005,20 @@ footer .footer-main .travel-destination p {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .reting {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .reting p {
   font-size: 14px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-top .reting p {
+    font-size: 6px;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-bottom {
   display: flex;
@@ -1878,20 +2031,40 @@ footer .footer-main .travel-destination p {
   font-size: 12px;
   color: gray;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-bottom .price-from {
+    font-size: 6px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-bottom .KHR {
   color: #008234;
   font-size: 20px;
   font-weight: 600;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-bottom .KHR {
+    font-size: 10px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-bottom .night {
   font-size: 12px;
   color: gray;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .box-text .text .text-right .text-right-bottom .night {
+    font-size: 6px;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .buttom {
   display: flex;
   justify-content: end;
   align-items: end;
   margin-top: 16px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .buttom {
+    margin-top: 2px;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .buttom button {
   padding: 10px;
@@ -1901,6 +2074,13 @@ footer .footer-main .travel-destination p {
   border: none;
   font-size: 12px;
   border-radius: 4px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .cards-list-hotels .box-cards .buttom button {
+    padding: 4px;
+    font-size: 6px;
+    display: none;
+  }
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .see-all {
   display: flex;
@@ -1912,11 +2092,378 @@ footer .footer-main .travel-destination p {
   margin-top: 10px;
   border-radius: 12px;
 }
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .see-all {
+    border-radius: 6px;
+  }
+}
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .see-all:hover {
   background-color: #0054b3;
 }
 .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .see-all p {
   color: white;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .see-all p {
+    font-size: 12px;
+  }
+}
+.hotel-main .popular-restaurant {
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.035) 0px 10px 20px, rgba(0, 0, 0, 0.051) 0px 6px 6px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant {
+    padding: 10px;
+  }
+}
+.hotel-main .popular-restaurant .text {
+  width: 80%;
+}
+.hotel-main .popular-restaurant .text h1 {
+  font-size: 24px;
+  color: #001E60;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .text h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant .text h1 {
+    font-size: 16px;
+  }
+}
+.hotel-main .popular-restaurant .but {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .but {
+    margin: 10px 0px;
+  }
+}
+.hotel-main .popular-restaurant .but #siem {
+  background: #001E60;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .but #siem {
+    padding: 8px 15px;
+    font-size: 10px;
+    border-radius: 6px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant .but #siem {
+    padding: 6px 12px;
+    font-size: 8px;
+  }
+}
+.hotel-main .popular-restaurant .but #phnom {
+  background: #FFFFFF;
+  font-weight: 300;
+  border: solid 2px #001E60;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .but #phnom {
+    padding: 8px 15px;
+    font-size: 10px;
+    border-radius: 6px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant .but #phnom {
+    padding: 6px 12px;
+    font-size: 8px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant .cards-rest-all {
+    gap: 10px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest {
+  width: 240px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: solid 1px rgb(227, 227, 227);
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest {
+    width: 150px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest {
+    width: 150px;
+    animation: none;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest img {
+  width: 238px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest img {
+    width: 148px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest img {
+    width: 148px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest p {
+  color: #1b1b1b;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest p {
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 2px;
+    padding-left: 8px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest .stars {
+  display: flex;
+  align-items: center;
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest .stars p {
+  font-size: 12px;
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest .stars p {
+    font-size: 8px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest .stars .star i {
+  color: #FF8C00;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest .stars .star i {
+    font-size: 10px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest #address {
+  flex-wrap: wrap;
+  width: 280px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #7F8CAB;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest #address {
+    width: 150px;
+    font-size: 8px;
+    padding-bottom: 10px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest .US {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest .US p {
+  font-size: 14px;
+  color: gray;
+  top: 40px;
+  padding-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest .US p {
+    font-size: 6px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .cards-rest .US h2 {
+  color: #001E60;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .popular-restaurant .cards-rest-all .cards-rest .US h2 {
+    font-size: 10px;
+  }
+}
+.hotel-main .popular-restaurant .cards-rest-all .koh img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .popular-restaurant .cards-rest-all .koh img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+.hotel-main .pupolar-places {
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .pupolar-places {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .pupolar-places {
+    padding: 10px;
+  }
+}
+.hotel-main .pupolar-places h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #001E60;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .pupolar-places h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+.hotel-main .pupolar-places .location-places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .pupolar-places .location-places {
+    gap: 10px;
+  }
+}
+.hotel-main .pupolar-places .location-places .box {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.hotel-main .pupolar-places .location-places .box:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .pupolar-places .location-places .box {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .pupolar-places .location-places .box {
+    width: 160px;
+    height: 160px;
+    font-size: 14px;
+  }
+}
+.hotel-main .pupolar-places .location-places .bayon {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Bayon Temple.png");
+}
+.hotel-main .pupolar-places .location-places .pub {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Pub Stree.png");
+}
+.hotel-main .pupolar-places .location-places .ta {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Ta Prohm Temple.png");
+}
+.hotel-main .pupolar-places .location-places .angkor {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Angkor Wat.png");
+}
+.hotel-main .pupolar-places .location-places .royal {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Royal Palace.png");
+}
+.hotel-main .pupolar-places .location-places .museum {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Museum.png");
+}
+.hotel-main .pupolar-places .location-places .genocide {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Genocide Museum.png");
+}
+.hotel-main .pupolar-places .location-places .walking {
+  background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Walking Street.png");
+}
+.hotel-main .faq-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hotel-main .faq-container {
+    width: 100%;
+  }
+}
+.hotel-main .faq-container h1 {
+  margin-bottom: 10px;
+  color: black;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .faq-container h1 {
+    font-size: 20px;
+  }
+}
+.hotel-main .faq-container .faq-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px gray;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hotel-main .faq-container .faq-card:hover {
+  transform: scale(1.1);
+}
+.hotel-main .faq-container .faq-card .faq-question {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .faq-container .faq-card .faq-question {
+    font-size: 16px;
+  }
+}
+.hotel-main .faq-container .faq-card .faq-answer {
+  padding: 0 15px 15px;
+  color: gray;
+  font-size: 16px;
+}
+@media screen and (max-width: 425px) {
+  .hotel-main .faq-container .faq-card .faq-answer {
+    font-size: 14px;
+  }
 }
 
 * {
