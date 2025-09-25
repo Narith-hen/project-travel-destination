@@ -1,0 +1,348 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#customerPage {
+  background: #00a59e;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  padding-top: 50px;
+  @include table {
+    height: 50vh;
+  }
+  .navbar-customer {
+    @extend .flex-sp-bet;
+    .material-symbols-outlined {
+      opacity: 0;
+      @include table {
+        color: $white;
+        opacity: 1;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        font-size: 2rem;
+      }
+    }
+    img {
+      width: 150px;
+      @extend .flex;
+      @include table {
+        width: 100px;
+        position: absolute;
+        top: 14px;
+        left: 20px;
+      }
+    }
+    ul {
+      @extend .flex;
+      list-style: none;
+      gap: 10px;
+      @include laptop {
+        font-size: 0.8rem;
+      }
+      @include table {
+        display: none;
+      }
+      #customerContent {
+        color: $primary;
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      a:hover {
+        color: $primary;
+      }
+      #sign {
+        @extend .btn;
+        a {
+          color: $white;
+        }
+      }
+      #home {
+        color: $primary;
+      }
+    }
+  }
+
+  .welcome-img {
+    display: flex;
+    justify-content: space-between;
+    @include table {
+      padding: 0px;
+      margin: 0px;
+    }
+    #customer {
+      font-size: 56px;
+      margin-top: 140px;
+
+      @include table {
+        font-size: 40px;
+      }
+      @include mobile {
+        font-size: 30px;
+        margin-top: 100px;
+      }
+    }
+    #hook {
+      @include table {
+        font-size: 16px;
+      }
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+
+    .but {
+      button {
+        color: white;
+        border: solid 1px white;
+        font-size: 16px;
+
+        @include mobile{
+            font-size: 10px;
+        }
+      }
+      button:hover {
+        background: $primary;
+        color: $white;
+        border: solid 1px $primary;
+      }
+      transition: transform 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        @include table {
+          display: none;
+        }
+      }
+    }
+    img {
+      width: 200px;
+      margin-top: 240px;
+
+      @include table {
+        width: 180px;
+        margin-top: 200px;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.customer-main {
+  width: 70%;
+  margin: auto;
+  @include table {
+    width: 100%;
+  }
+  .service-chat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    .service-chat1 {
+      margin-bottom: 20px;
+      h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        width: 50%;
+        @extend .flex;
+        justify-content: flex-start;
+        @include table {
+          margin-bottom: 15px;
+        }
+
+        @include mobile {
+          width: 100%;
+          font-size: 20px;
+        }
+        span {
+          width: 20px;
+          height: 20px;
+          background-color: #50c8c2;
+          margin-right: 10px;
+          color: #ffffff;
+          border-radius: 100%;
+
+          @include mobile {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+      .service-chat-contents {
+        @extend .flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+
+        @include mobile {
+          gap: 4px;
+        }
+        p {
+          padding: 6px 40px;
+          border: solid 1px rgb(212, 212, 212);
+          border-radius: 6px;
+          @extend .flex;
+          font-size: 14px;
+          gap: 5px;
+
+          @include mobile {
+            padding: 4px 10px;
+            font-size: 10px;
+          }
+
+          span {
+            color: gray;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .service-chat-question {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        @include table {
+          flex-direction: column;
+        }
+        @include mobile {
+          gap: 4px;
+        }
+        p {
+          width: 49%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 24px 16px;
+          background-color: #f5f5f5d8;
+          border-radius: 4px;
+          color: $black-color;
+
+          @include table {
+            width: 100%;
+            padding: 20px 12px;
+          }
+
+          @include mobile {
+            font-size: 12px;
+            padding: 10px 6px;
+          }
+        }
+      }
+    }
+
+    .service-chat2 {
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+
+        @include table {
+          margin-bottom: 10px;
+        }
+
+        @include mobile {
+          width: 100%;
+          font-size: 20px;
+        }
+      }
+      .topic {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        @include table {
+          gap: 4px;
+        }
+
+        p {
+          padding: 10px 16px;
+          background-color: #f8f8f8;
+          font-size: 14px;
+          border-radius: 4px;
+          @extend .flex;
+
+          @include table {
+            font-size: 12px;
+            padding: 6px 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .service {
+    background-color: white;
+    @extend .flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 8px;
+
+    @include table {
+      margin-top: 10px;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      border-right: solid 1px rgb(196, 196, 196);
+      padding: 20px;
+      color: gray;
+
+      @include table {
+        padding: 12px;
+        font-size: 14px;
+      }
+
+      @include mobile {
+        padding: 8px;
+        font-size: 10px;
+      }
+
+      span {
+        font-size: 20px;
+        margin-right: 4px;
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+    #first {
+      color: $secondary;
+    }
+  }
+}

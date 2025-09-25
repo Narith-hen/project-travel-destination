@@ -1,11 +1,11 @@
 @charset "UTF-8";
-.flex, .hotel-main .pupolar-places .location-places .box, .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel .card1, .hotel-main .booking-box .search-btn, #hotelPage #hookhotel, #hotelPage #hotel-pupolar, #hotelPage .navbar-hotel ul, #hotelPage .navbar-hotel img, .about-main .why-should-we-go, .about-main .about-content-important-travel, #aboutPage #hook, #aboutPage #aboutus, #aboutPage .navbar-about ul, #aboutPage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
+.flex, .customer-main .service, .customer-main .service-chat .service-chat2 .topic p, .customer-main .service-chat .service-chat1 .service-chat-contents p, .customer-main .service-chat .service-chat1 .service-chat-contents, .customer-main .service-chat .service-chat1 h1, #customerPage .navbar-customer ul, #customerPage .navbar-customer img, .hotel-main .pupolar-places .location-places .box, .hotel-main .popular-hotels .hotel-map-cards-hotels .hotel-cards .contents-check-hotel .card1, .hotel-main .booking-box .search-btn, #hotelPage #hookhotel, #hotelPage #hotel-pupolar, #hotelPage .navbar-hotel ul, #hotelPage .navbar-hotel img, .about-main .why-should-we-go, .about-main .about-content-important-travel, #aboutPage #hook, #aboutPage #aboutus, #aboutPage .navbar-about ul, #aboutPage .navbar-about img, footer .footer-main .travel-destination, footer .footer-main .logo-footer, main .total-price .price, main .partners .all-partner, main .content .promotion, header .navbar ul, header .navbar img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-sp-bet, #hotelPage .navbar-hotel, #aboutPage .navbar-about, header .navbar {
+.flex-sp-bet, #customerPage .navbar-customer, #hotelPage .navbar-hotel, #aboutPage .navbar-about, header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@
   padding: 100px 0px;
 }
 
-.btn, .hotel-main .popular-restaurant .but #phnom, .hotel-main .popular-restaurant .but #siem, #hotelPage .navbar-hotel ul #sign, #aboutPage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
+.btn, #customerPage .navbar-customer ul #sign, .hotel-main .popular-restaurant .but #phnom, .hotel-main .popular-restaurant .but #siem, #hotelPage .navbar-hotel ul #sign, #aboutPage .navbar-about ul #sign, main .content .popular-restaurant .but #phnom, main .content .popular-restaurant .but #siem, header .navbar ul #sign {
   padding: 10px 20px;
   background: #0050FF;
   border-radius: 8px;
@@ -2464,6 +2464,370 @@ footer .footer-main .travel-destination p {
   .hotel-main .faq-container .faq-card .faq-answer {
     font-size: 14px;
   }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+#customerPage {
+  background: #00a59e;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  #customerPage {
+    height: 50vh;
+  }
+}
+#customerPage .navbar-customer .material-symbols-outlined {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  #customerPage .navbar-customer .material-symbols-outlined {
+    color: #FFFFFF;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+#customerPage .navbar-customer img {
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  #customerPage .navbar-customer img {
+    width: 100px;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+  }
+}
+#customerPage .navbar-customer ul {
+  list-style: none;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  #customerPage .navbar-customer ul {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #customerPage .navbar-customer ul {
+    display: none;
+  }
+}
+#customerPage .navbar-customer ul #customerContent {
+  color: #FF8C00;
+}
+#customerPage .navbar-customer ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#customerPage .navbar-customer ul a:hover {
+  color: #FF8C00;
+}
+#customerPage .navbar-customer ul #sign a {
+  color: #FFFFFF;
+}
+#customerPage .navbar-customer ul #home {
+  color: #FF8C00;
+}
+#customerPage .welcome-img {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  #customerPage .welcome-img {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+#customerPage .welcome-img #customer {
+  font-size: 56px;
+  margin-top: 140px;
+}
+@media screen and (max-width: 768px) {
+  #customerPage .welcome-img #customer {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #customerPage .welcome-img #customer {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #customerPage .welcome-img #hook {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #customerPage .welcome-img #hook {
+    font-size: 14px;
+  }
+}
+#customerPage .welcome-img .but {
+  transition: transform 0.2s ease-in-out;
+}
+#customerPage .welcome-img .but button {
+  color: white;
+  border: solid 1px white;
+  font-size: 16px;
+}
+@media screen and (max-width: 425px) {
+  #customerPage .welcome-img .but button {
+    font-size: 10px;
+  }
+}
+#customerPage .welcome-img .but button:hover {
+  background: #FF8C00;
+  color: #FFFFFF;
+  border: solid 1px #FF8C00;
+}
+#customerPage .welcome-img .but:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+  #customerPage .welcome-img .but:hover {
+    display: none;
+  }
+}
+#customerPage .welcome-img img {
+  width: 200px;
+  margin-top: 240px;
+}
+@media screen and (max-width: 768px) {
+  #customerPage .welcome-img img {
+    width: 180px;
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #customerPage .welcome-img img {
+    display: none;
+  }
+}
+
+.customer-main {
+  width: 70%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .customer-main {
+    width: 100%;
+  }
+}
+.customer-main .service-chat {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat {
+    padding: 10px;
+  }
+}
+.customer-main .service-chat .service-chat1 {
+  margin-bottom: 20px;
+}
+.customer-main .service-chat .service-chat1 h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  width: 50%;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service-chat .service-chat1 h1 {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat .service-chat1 h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+.customer-main .service-chat .service-chat1 h1 span {
+  width: 20px;
+  height: 20px;
+  background-color: #50c8c2;
+  margin-right: 10px;
+  color: #ffffff;
+  border-radius: 100%;
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat .service-chat1 h1 span {
+    width: 15px;
+    height: 15px;
+  }
+}
+.customer-main .service-chat .service-chat1 .service-chat-contents {
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat .service-chat1 .service-chat-contents {
+    gap: 4px;
+  }
+}
+.customer-main .service-chat .service-chat1 .service-chat-contents p {
+  padding: 6px 40px;
+  border: solid 1px rgb(212, 212, 212);
+  border-radius: 6px;
+  font-size: 14px;
+  gap: 5px;
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat .service-chat1 .service-chat-contents p {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+}
+.customer-main .service-chat .service-chat1 .service-chat-contents p span {
+  color: gray;
+  font-size: 20px;
+}
+.customer-main .service-chat .service-chat1 .service-chat-question {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service-chat .service-chat1 .service-chat-question {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat .service-chat1 .service-chat-question {
+    gap: 4px;
+  }
+}
+.customer-main .service-chat .service-chat1 .service-chat-question p {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+  background-color: rgba(245, 245, 245, 0.8470588235);
+  border-radius: 4px;
+  color: #1b1b1b;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service-chat .service-chat1 .service-chat-question p {
+    width: 100%;
+    padding: 20px 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat .service-chat1 .service-chat-question p {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+}
+.customer-main .service-chat .service-chat2 h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service-chat .service-chat2 h1 {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service-chat .service-chat2 h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+.customer-main .service-chat .service-chat2 .topic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service-chat .service-chat2 .topic {
+    gap: 4px;
+  }
+}
+.customer-main .service-chat .service-chat2 .topic p {
+  padding: 10px 16px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service-chat .service-chat2 .topic p {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+.customer-main .service {
+  background-color: white;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service {
+    margin-top: 10px;
+  }
+}
+.customer-main .service p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-right: solid 1px rgb(196, 196, 196);
+  padding: 20px;
+  color: gray;
+}
+@media screen and (max-width: 768px) {
+  .customer-main .service p {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service p {
+    padding: 8px;
+    font-size: 10px;
+  }
+}
+.customer-main .service p span {
+  font-size: 20px;
+  margin-right: 4px;
+}
+@media screen and (max-width: 425px) {
+  .customer-main .service p span {
+    font-size: 16px;
+  }
+}
+.customer-main .service p:last-child {
+  border-right: none;
+}
+.customer-main .service #first {
+  color: #0050FF;
 }
 
 * {
