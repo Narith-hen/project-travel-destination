@@ -137,7 +137,7 @@
     }
     img {
       width: 200px;
-      margin-top: 240px;
+      margin-top: 100px;
 
       @include table {
         width: 180px;
@@ -151,7 +151,7 @@
 }
 
 .customer-main {
-  width: 70%;
+  width: 100%;
   margin: auto;
   @include table {
     width: 100%;

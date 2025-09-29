@@ -15,7 +15,7 @@
   padding: 0px 100px;
 }
 
-.padding-top-bottom, .about-main .about-content-important-travel {
+.padding-top-bottom {
   padding: 100px 0px;
 }
 
@@ -46,12 +46,12 @@
 .places-style, .hotel-main .pupolar-places .location-places .box {
   background-size: cover;
   background-position: center;
-  width: 240px;
-  height: 240px;
+  width: 180px;
+  height: 180px;
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 header {
@@ -795,7 +795,7 @@ footer .footer-main .travel-destination p {
   background: linear-gradient(rgba(4, 20, 250, 0.296), rgba(6, 22, 249, 0.285)), url("../images/aboutPage/aboutpage.png");
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 80vh;
   padding-top: 50px;
 }
 @media screen and (max-width: 768px) {
@@ -883,14 +883,16 @@ footer .footer-main .travel-destination p {
 }
 
 .about-main .about-content-important-travel {
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
 }
 @media screen and (max-width: 768px) {
   .about-main .about-content-important-travel {
     padding-top: 50px;
     display: flow-root;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 20px;
   }
 }
@@ -901,9 +903,9 @@ footer .footer-main .travel-destination p {
   }
 }
 .about-main .about-content-important-travel img {
-  width: 800px;
-  border-bottom-left-radius: 400px;
-  border-top-left-radius: 400px;
+  width: 600px;
+  border-bottom-left-radius: 200px;
+  border-top-left-radius: 200px;
 }
 @media screen and (max-width: 768px) {
   .about-main .about-content-important-travel img {
@@ -926,7 +928,7 @@ footer .footer-main .travel-destination p {
 .about-main .about-content-important-travel .about-text-important-travel h1 {
   flex-wrap: wrap;
   color: #001E60;
-  padding-bottom: 60px;
+  padding-bottom: 24px;
 }
 .about-main .about-content-important-travel .about-text-important-travel h1 span {
   color: #FF8C00;
@@ -950,8 +952,8 @@ footer .footer-main .travel-destination p {
 }
 .about-main .about-content-important-travel .about-text-important-travel p {
   flex-wrap: wrap;
-  padding-bottom: 32px;
-  width: 800px;
+  padding-bottom: 24px;
+  width: 700px;
   text-align: justify;
   font-size: 18px;
 }
@@ -1055,8 +1057,8 @@ footer .footer-main .travel-destination p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom-left-radius: 320px;
-  border-top-right-radius: 320px;
+  border-bottom-left-radius: 240px;
+  border-top-right-radius: 240px;
 }
 @media screen and (max-width: 768px) {
   .about-main .about-partner-with-us {
@@ -1095,7 +1097,7 @@ footer .footer-main .travel-destination p {
 }
 .about-main .about-partner-with-us .about-text-partner-with-us p {
   color: #FFFFFF;
-  padding: 0px 230px;
+  padding: 0px 100px;
   font-size: 18px;
   font-weight: 300;
   flex-wrap: wrap;
@@ -1113,9 +1115,9 @@ footer .footer-main .travel-destination p {
   }
 }
 .about-main .about-partner-with-us .about-img-partner-with-us img {
-  width: 850px;
+  width: 680px;
   height: auto;
-  border-top-right-radius: 320px;
+  border-top-right-radius: 240px;
 }
 @media screen and (max-width: 768px) {
   .about-main .about-partner-with-us .about-img-partner-with-us img {
@@ -1401,7 +1403,7 @@ footer .footer-main .travel-destination p {
   text-align: center;
 }
 .about-main .download img {
-  width: 1400px;
+  width: 1000px;
 }
 @media screen and (max-width: 768px) {
   .about-main .download img {
@@ -1436,7 +1438,7 @@ footer .footer-main .travel-destination p {
   background: linear-gradient(rgba(99, 109, 252, 0.5), rgba(57, 66, 196, 0.5)), url("../images/hotel&pupolar/Home-page_HanumanTravel.jpg");
   background-size: cover;
   background-position: center;
-  height: 40vh;
+  height: 60vh;
   padding-top: 50px;
 }
 #hotelPage .navbar-hotel .material-symbols-outlined {
@@ -1522,7 +1524,7 @@ footer .footer-main .travel-destination p {
 
 .hotel-main .booking-box {
   background: white;
-  width: 80%;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -1680,7 +1682,7 @@ footer .footer-main .travel-destination p {
 }
 .hotel-main .popular-hotels {
   background: white;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: 20px;
   border-radius: 10px;
@@ -2111,7 +2113,7 @@ footer .footer-main .travel-destination p {
 .hotel-main .popular-restaurant {
   flex-wrap: wrap;
   margin: auto;
-  width: 80%;
+  width: 100%;
   background-color: white;
   padding: 20px;
   border-radius: 12px;
@@ -2203,9 +2205,9 @@ footer .footer-main .travel-destination p {
   }
 }
 .hotel-main .popular-restaurant .cards-rest-all .cards-rest {
-  width: 240px;
+  width: 201px;
   background-color: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 10px;
   border: solid 1px rgb(227, 227, 227);
   box-sizing: border-box;
   transition: transform 0.3s ease-in-out;
@@ -2226,7 +2228,7 @@ footer .footer-main .travel-destination p {
   }
 }
 .hotel-main .popular-restaurant .cards-rest-all .cards-rest img {
-  width: 238px;
+  width: 200px;
 }
 @media screen and (max-width: 768px) {
   .hotel-main .popular-restaurant .cards-rest-all .cards-rest img {
@@ -2240,7 +2242,7 @@ footer .footer-main .travel-destination p {
 }
 .hotel-main .popular-restaurant .cards-rest-all .cards-rest p {
   color: #1b1b1b;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   padding-top: 10px;
   padding-left: 20px;
@@ -2259,7 +2261,7 @@ footer .footer-main .travel-destination p {
 }
 .hotel-main .popular-restaurant .cards-rest-all .cards-rest .stars p {
   font-size: 12px;
-  color: rgb(82, 82, 82);
+  color: rgb(255, 0, 0);
   font-weight: 400;
 }
 @media screen and (max-width: 768px) {
@@ -2278,11 +2280,11 @@ footer .footer-main .travel-destination p {
 }
 .hotel-main .popular-restaurant .cards-rest-all .cards-rest #address {
   flex-wrap: wrap;
-  width: 280px;
-  font-size: 14px;
+  width: 200px;
+  font-size: 10px;
   font-weight: 300;
   color: #7F8CAB;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .hotel-main .popular-restaurant .cards-rest-all .cards-rest #address {
@@ -2300,7 +2302,7 @@ footer .footer-main .travel-destination p {
   padding-bottom: 10px;
 }
 .hotel-main .popular-restaurant .cards-rest-all .cards-rest .US p {
-  font-size: 14px;
+  font-size: 10px;
   color: gray;
   top: 40px;
   padding-top: 5px;
@@ -2319,8 +2321,8 @@ footer .footer-main .travel-destination p {
   }
 }
 .hotel-main .popular-restaurant .cards-rest-all .koh img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 @media screen and (max-width: 425px) {
   .hotel-main .popular-restaurant .cards-rest-all .koh img {
@@ -2335,7 +2337,7 @@ footer .footer-main .travel-destination p {
   padding: 20px;
   flex-wrap: wrap;
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .hotel-main .pupolar-places {
@@ -2362,7 +2364,7 @@ footer .footer-main .travel-destination p {
 .hotel-main .pupolar-places .location-places {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 @media screen and (max-width: 425px) {
   .hotel-main .pupolar-places .location-places {
@@ -2415,7 +2417,7 @@ footer .footer-main .travel-destination p {
   background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(10, 10, 10, 0.5)), url("../images/hotel&pupolar/places/Walking Street.png");
 }
 .hotel-main .faq-container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   margin-top: 20px;
 }
@@ -2613,7 +2615,7 @@ footer .footer-main .travel-destination p {
 }
 #customerPage .welcome-img img {
   width: 200px;
-  margin-top: 240px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 768px) {
   #customerPage .welcome-img img {
@@ -2628,7 +2630,7 @@ footer .footer-main .travel-destination p {
 }
 
 .customer-main {
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 @media screen and (max-width: 768px) {
